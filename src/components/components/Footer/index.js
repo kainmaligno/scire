@@ -15,31 +15,31 @@ const Footer = () => (
             <img src={marker} />
             <p>
               Torres Médicas Angelópolis Periférico Ecológico 3507, Reserva
-              Territorial Atlixcáyotl, 72830,<br/> San Andres Cholula, Puebla,
-              México.
+              Territorial Atlixcáyotl, 72830,
+              <br /> San Andres Cholula, Puebla, México.
             </p>
           </div>
         </Marker>
-        <div>
-            <Contact>
-                <img src={phone}/>
-                <img src={mail}/>
-                <div>
-            CONTÁCTANOS:
-
-22 21691 802
-22 2715 3842
-
-contacto@scire.com.mx
+        <ContactContainer>
+          <Contact>
+            <img src={phone} />
+            <img src={mail} />
+          </Contact>
+          <div>
+              <p>
+                <span style={{color:"#9B79C1"}}>CONTÁCTANOS:</span> 22 21691 802 22 2715 3842 contacto@scire.com.mx
+              </p>
             </div>
-            </Contact>
-        
-          
-        </div>
+        </ContactContainer>
       </FooterContainer>
-      <Info>Sitio 100% seguro. Tu información es confidencial y está completamente protegida.</Info>
+      <Info>
+        Sitio 100% seguro. Tu información es confidencial y está completamente
+        protegida.
+      </Info>
     </Footerheader>
-    <FooterBottom>SCIRE ® Todos los derechos reservados. Desarrollado por Spartan Devs.</FooterBottom>
+    <FooterBottom>
+      SCIRE ® Todos los derechos reservados. Desarrollado por Spartan Devs.
+    </FooterBottom>
   </FooterWrapper>
 )
 
@@ -103,14 +103,44 @@ const Marker = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 60px;
+
     p {
       height: 5.42%;
       width: 91%;
       color: #ffffff;
       font-family: "Walkway SemiBold";
-      font-size: 14px;
+      font-size: 17px;
       line-height: 15px;
       text-align:justify;
+    }
+  }
+`
+
+const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  div {
+    height: 100%;
+    width: 46%;
+    margin: 10px;
+    margin-left:30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    p {
+      height: 9.16%;
+      width: 18%;
+      color: #ffffff;
+      font-family: "Walkway SemiBold";
+      font-size: 12px;
+      line-height: 24px;
+      margin-top:-15px;
     }
   }
 `
@@ -120,15 +150,15 @@ display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
-    height: 100%;
+    width: 28%;
+    height: 85%;
     padding-top: 58px;
 
     img{
         margin-bottom:20px;
     }
     div{
-        width:50%;
+        
     }
 `
 const Info = styled.div`
@@ -136,8 +166,8 @@ const Info = styled.div`
     height: 12px;
     color: #FFFFFF;
     font-family: "Walkway SemiBold";
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 18px;
+    line-height: 32px;
     text-align: center;
   
 `
