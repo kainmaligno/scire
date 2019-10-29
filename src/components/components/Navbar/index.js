@@ -4,6 +4,8 @@ import InstaIcon from "../../../images/insta.svg"
 import FaceIcon from "../../../images/face.svg"
 import CallIcon from "../../../images/tel.svg"
 import Scire from "../../../images/Logo_scire.svg"
+import Button from "../../styledComponents/HeaderButton"
+import pallete from "../../../pallete"
 
 const NavWrapper = styled.div`
   height: 115px;
@@ -15,12 +17,15 @@ const NavWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
 `
 const NavContainer = styled.div`
   height: 120px;
   width: 96%;
 `
 const NavSocialContainer = styled.div`
+    margin-bottom: 1%;
+    margin-top: -1%;
   height: 50%;
   display: flex;
   flex-direction: row;
@@ -47,7 +52,7 @@ const NavContactWrapper = styled.div`
   span {
     height: 16px;
     color: #72295e;
-    font-family: "Gotham Condensed";
+    font-family: ${pallete.fonts.gotham};
     font-size: 16px;
     font-weight: 300;
     line-height: 16px;
@@ -78,7 +83,7 @@ const LogoContainer = styled.div`
   align-items: center;
 `
 const UnorderList = styled.ul`
-    width:70%;
+    width:55%;
     list-style: none;
     display: flex;
     flex-flow: row;
@@ -86,7 +91,7 @@ const UnorderList = styled.ul`
     align-items: center;
   li {
     height: 19px;
-    width: 140px;
+    width: 250px;
     color: #b0b0b0;
     font-family: "Gotham Condensed";
     font-size: 18px;
@@ -118,7 +123,7 @@ const Navbar = () => (
                 <li>SERVICIOS</li>
                 <li>QUIENES SOMOS</li>
                 <li>PREGUNTA AL EXPERTO</li>
-                <li>BOTON DE AGENDA</li>
+                 <Button><p>AGENDA Y COTIZA</p></Button>
             </UnorderList>
         </NavListWrapper>
       </NavListContainer>

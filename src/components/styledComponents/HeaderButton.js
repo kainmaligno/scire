@@ -17,11 +17,11 @@ const HeaderButton = styled.button`
     justify-content: center;
     align-items: center;
   p {
-    height: 19px;
+    height: 4px;
   width: 200px;
     color: ${pallete.color.secondary.main};
     font-family: "Gotham Condensed";
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 19px;
     text-align: center;

@@ -1,6 +1,8 @@
+import Gotham from "./fonts/GothamCondensed-Book.woff"
+
 const pallete = {
  fonts:{
-    gotham: "Gotham Condensed",
+    gotham: Gotham,
     walkwayBold: "Walkway Bold",
     walkwayS: "Walkway SemiBold",
     
