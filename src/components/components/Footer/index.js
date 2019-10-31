@@ -48,7 +48,7 @@ export default Footer
 const FooterWrapper = styled.div`
   height: 230px;
   width: 100%;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   display: block;
   overflow: hidden;
 `

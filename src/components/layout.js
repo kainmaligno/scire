@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./components/Navbar"
+import Header from "./components/header"
 import Footer from "./components/Footer"
 import "./layout.css"
 import styled from 'styled-components'
@@ -20,20 +20,30 @@ const Lay = styled.div`
 
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, props }) => {
+  
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
+    query {
+       title:site {
         siteMetadata {
           title
         }
       }
+      header:file(relativePath:{ eq: "neuro_man.png"}){
+                childImageSharp{
+                  fluid(maxWidth:1240){
+                    originalName
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
     }
+  
   `)
 
   return (
     <Lay>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.title.siteMetadata.title} image={data.header} />
             <main>{children}</main>
         <Footer/>
     </Lay>
@@ -45,3 +55,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+

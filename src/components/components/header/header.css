@@ -1,15 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
-
-
-header{
-    margin-bottom: 2%;
+@font-face {
+    font-family: 'Gotham Condensed';
+    src: url('../../../fonts/GothamCondensed-Book.woff2') format('woff2'),
+        url('../../../fonts/GothamCondensed-Book.woff') format('woff'),
+        url('../../../fonts/GothamCondensed-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-video{
-    object-fit: cover;
-    min-width:100%;
-    min-height:100vh;
+@font-face{
+    font-family: '"Walkway SemiBold';
+    src: url('../../../fonts/WalkwayBold.woff2')format('woff2'),
+        url('../../../fonts/WalkwaySemiBold.woff')format('woff'),
+        url('../../../fonts/WalkwaySemiBold.ttf')format('truetype');
+        font-weight: normal;
+        font-style: normal;
 }
+
+
+
+
+
 .content{
     position: absolute;
     /* background: rgba(0, 0, 0, 0.5); */
@@ -22,7 +32,14 @@ video{
     align-content: center;
 }
 .hero{
-    background-color:rgb(0,0,0,0);
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    /* width: 98vw;
+  
+    */
+    
+    /* background-color:rgb(0,0,0,0);
     background-size:cover;
     background-attachment: scroll;
     background-position: center center;
@@ -33,9 +50,9 @@ video{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: relative; */
 }
-
+ 
 .big-overlay{
     color: inherit;
     position: absolute;
@@ -72,23 +89,23 @@ video{
     flex-wrap: wrap;
     justify-content: center;
 }
+@media  only screen  and (min-width: 1020px){
+   .hero{
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    
+   }
+   .hero img{
+    height: 112px;
 
-@media  only screen  and (max-width: 1024px){
-    .mainTitle{
-        line-height: 10px;
-        font-size: 3em;
-
-    }
+   }
 }
+
 @media only screen and (max-width:768px){
-    .mainTitle{
-        font-size: 2em;
-    }
+    
    
 }
-
-@media only screen and (max-width: 720px){
-    .hero{
-        display: none;
-    }
-}
+@media only screen and (min-width: 720px){
+    
+} 

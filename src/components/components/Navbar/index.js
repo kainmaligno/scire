@@ -17,6 +17,7 @@ const NavWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top:1%;
   
 `
 const NavContainer = styled.div`
@@ -117,7 +118,7 @@ const Navbar = () => (
       <NavListContainer>
         <NavListWrapper>
           <LogoContainer>
-            <img src={Scire} />
+            <img src={Scire} alt="logo Scire" widt="150px"  height="60px"/>
           </LogoContainer>
           <UnorderList>
                 <li>SERVICIOS</li>
