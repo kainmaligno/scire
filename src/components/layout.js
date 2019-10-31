@@ -31,7 +31,7 @@ const Layout = ({ children, props }) => {
       }
       header:file(relativePath:{ eq: "neuro_man.png"}){
                 childImageSharp{
-                  fluid(maxWidth:1240){
+                  fluid(maxWidth:1200){
                     originalName
                     ...GatsbyImageSharpFluid
                   }

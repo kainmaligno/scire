@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import Navbar from "../Navbar"
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+
+import Button from "../../styledComponents/Button"
 //todo al contenedor de informacion hacer position relative y z-index *2 
 const Header = ({ siteTitle, image }) => (
 
@@ -22,7 +24,26 @@ const Header = ({ siteTitle, image }) => (
       height: "100%"
     }}
      />
+     <div className="infoContainer">
+      <div className="innerTitle-container">
+        <p className="innerTitle">
+                  Una empresa creada
+          por seres humanos
+          para el cuidado y la salud de
+          otros seres humanos
+        </p>
+      </div>
+      <div className="innerText-container">
+          <p className="innerText">
+          Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología.
+          </p>
+      </div>
+      <div className="button-container">
+          <Button><p>AGENDA TU CITA</p></Button>
+      </div>
     </div>
+    </div>
+   
   </header>
 )
 Header.propTypes = {
