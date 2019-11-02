@@ -5,6 +5,7 @@ import FaceIcon from "../../../images/face.svg"
 import CallIcon from "../../../images/tel.svg"
 import Scire from "../../../images/Logo_scire.svg"
 import Button from "../../styledComponents/HeaderButton"
+import { Link } from "gatsby"
 import pallete from "../../../pallete"
 
 const NavWrapper = styled.div`
@@ -122,7 +123,7 @@ const Navbar = () => (
           </LogoContainer>
           <UnorderList>
                 <li>SERVICIOS</li>
-                <li>QUIENES SOMOS</li>
+                <Link to='/page-2/'> <li>QUIENES SOMOS</li> </Link>
                 <li>PREGUNTA AL EXPERTO</li>
                  <Button><p>AGENDA Y COTIZA</p></Button>
             </UnorderList>
