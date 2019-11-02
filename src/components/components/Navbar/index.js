@@ -6,6 +6,7 @@ import CallIcon from "../../../images/tel.svg"
 import Scire from "../../../images/Logo_scire.svg"
 import Button from "../../styledComponents/HeaderButton"
 import pallete from "../../../pallete"
+import { Link } from 'gatsby';
 
 const NavWrapper = styled.div`
   height: 115px;
@@ -118,11 +119,17 @@ const Navbar = () => (
       <NavListContainer>
         <NavListWrapper>
           <LogoContainer>
-            <img src={Scire} alt="logo Scire" widt="150px"  height="60px"/>
+            <Link to = "/">
+              <img src={Scire} alt="logo Scire" widt="150px"  height="60px"/>
+            </Link>
           </LogoContainer>
           <UnorderList>
-                <li>SERVICIOS</li>
-                <li>QUIENES SOMOS</li>
+                <li>
+                  <Link to="servicios">SERVICIOS</Link>
+                </li>
+                <li>
+                  <Link to = "quienes-somos">Quienes somos</Link>
+                </li>
                 <li>PREGUNTA AL EXPERTO</li>
                  <Button><p>AGENDA Y COTIZA</p></Button>
             </UnorderList>
