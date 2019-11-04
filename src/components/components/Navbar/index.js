@@ -123,7 +123,7 @@ const Navbar = () => (
           </LogoContainer>
           <UnorderList>
                 <li>SERVICIOS</li>
-                <Link to='/page-2/'> <li>QUIENES SOMOS</li> </Link>
+                <Link to='/nosotros'><li>QUIENES SOMOS</li></Link>
                 <li>PREGUNTA AL EXPERTO</li>
                  <Button><p>AGENDA Y COTIZA</p></Button>
             </UnorderList>
