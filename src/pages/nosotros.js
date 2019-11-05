@@ -26,7 +26,6 @@ const AboutPage = () => {
       }
     }
   `)
-    console.log(data.aboutDataJson.nosotros)
     const { title, body, btnInfo} = data.aboutDataJson.nosotros
     return (
       <Layout>

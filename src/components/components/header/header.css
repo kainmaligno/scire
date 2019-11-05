@@ -21,11 +21,7 @@
 
 
 header{
- 
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center; */
+  margin-bottom: 4em;
 }
 .hero{
     height: 63vh;

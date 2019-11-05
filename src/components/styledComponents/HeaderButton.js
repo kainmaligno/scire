@@ -6,8 +6,8 @@ import pallete from "../../pallete"
  */
 const HeaderButton = styled.button`
   box-sizing: border-box;
-  height: 5.78%;
-  width: 21.48%;
+  height:48px;
+  width: 220px;
   border: 1px solid ${pallete.color.secondary.main};
   border-radius: 8px;
   background-color:${pallete.color.white.main};
@@ -16,12 +16,10 @@ const HeaderButton = styled.button`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  p {
-    height: 4px;
-  width: 200px;
+  span {
     color: ${pallete.color.secondary.main};
     font-family: "Gotham Condensed";
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 19px;
     text-align: center;

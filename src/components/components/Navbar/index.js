@@ -122,10 +122,10 @@ const Navbar = () => (
             <img src={Scire} alt="logo Scire" widt="150px"  height="60px"/>
           </LogoContainer>
           <UnorderList>
-                <li>SERVICIOS</li>
+                <Link to='/servicios'><li> SERVICIOS</li></Link>
                 <Link to='/nosotros'><li>QUIENES SOMOS</li></Link>
                 <li>PREGUNTA AL EXPERTO</li>
-                 <Button><p>AGENDA Y COTIZA</p></Button>
+                 <Button><span>AGENDA Y COTIZA</span></Button>
             </UnorderList>
         </NavListWrapper>
       </NavListContainer>
