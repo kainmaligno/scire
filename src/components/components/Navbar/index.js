@@ -18,16 +18,15 @@ const NavWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top:1%;
-  
+  padding-top: 1%;
 `
 const NavContainer = styled.div`
   height: 120px;
   width: 96%;
 `
 const NavSocialContainer = styled.div`
-    margin-bottom: 1%;
-    margin-top: -1%;
+  margin-bottom: 1%;
+  margin-top: -1%;
   height: 50%;
   display: flex;
   flex-direction: row;
@@ -76,7 +75,7 @@ const NavListWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height:0px;
+  height: 0px;
 `
 const LogoContainer = styled.div`
   display: flex;
@@ -85,12 +84,12 @@ const LogoContainer = styled.div`
   align-items: center;
 `
 const UnorderList = styled.ul`
-    width:55%;
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
+  width: 55%;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
   li {
     height: 19px;
     width: 250px;
@@ -119,16 +118,23 @@ const Navbar = () => (
       <NavListContainer>
         <NavListWrapper>
           <Link to="/">
-          <LogoContainer>
-            <img src={Scire} alt="logo Scire" widt="150px"  height="60px"/>
-          </LogoContainer>
+            <LogoContainer>
+              <img src={Scire} alt="logo Scire" widt="150px" height="60px" />
+            </LogoContainer>
           </Link>
           <UnorderList>
-                <li> <Link to='/servicios_estudios'>SERVICIOS</Link></li>
-                <Link to='/nosotros'><li>QUIENES SOMOS</li></Link>
-                <li>PREGUNTA AL EXPERTO</li>
-                 <Button><span>AGENDA Y COTIZA</span></Button>
-            </UnorderList>
+            <li>
+              {" "}
+              <Link to="/servicios">SERVICIOS</Link>
+            </li>
+            <Link to="/nosotros">
+              <li>QUIENES SOMOS</li>
+            </Link>
+            <li>PREGUNTA AL EXPERTO</li>
+            <Button>
+              <span>AGENDA Y COTIZA</span>
+            </Button>
+          </UnorderList>
         </NavListWrapper>
       </NavListContainer>
     </NavContainer>
