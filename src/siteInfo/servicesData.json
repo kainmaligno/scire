@@ -1,10 +1,23 @@
 [
     {
+
         "services":{
+
+        },
+        "services_consulta":{
             "title":"EL PACIENTE SIEMPRE ES PRIMERO",
             "body":"La calidez humana y el profesionalismo nos distinguen y así nuestros pacientes se pueden sentir como en casa.",
             "btnInfo":"QUIERO MI CITA",
             "pointer":"Servicios / Consulta Médica"
+        },
+        "services_estudios":{
+            "title":"VANGUARDIA Y EXPERIENCIA PARA UN RESULTADO CERTERO",
+            "body":"Instalaciones de vanguardia y equipos de diagnóstico de última generación.",
+            "btnInfo":"QUIERO MI CITA",
+            "pointer":"Servicios / Estudios",
+            "articleTitle":"Identificamos eficazmente el problema para atenderlo y solucionarlo."
         }
+
+        
     }
 ]
