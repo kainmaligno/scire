@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53 (72520) - https://sketchapp.com -->
+    <title>15C1703B-EB9E-4A0D-808C-4FD4DC559574</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+        <filter x="-11.7%" y="-8.3%" width="123.3%" height="123.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.446586277   0 0 0 0 0.162176853   0 0 0 0 0.368513102  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="51.678531%" y1="37.7867954%" x2="38.2347217%" y2="89.6079401%" id="linearGradient-3">
+            <stop stop-color="#AA5397" offset="0%"></stop>
+            <stop stop-color="#72295E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="propuesta-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="servicios_estudios" transform="translate(-379.000000, -902.000000)">
+            <g id="CARD_ESTUDIO-5" transform="translate(363.000000, 880.000000)">
+                <g id="1">
+                    <g id="estudio/electroencefalograma" transform="translate(20.000000, 24.000000)">
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M20.1303192,18.992129 C22.8008037,14.0890704 28.1467994,14.5144569 32.3192864,17.6729716 C36.4917734,20.8314862 42.8993893,20.4956773 42.473743,25.2446186 C42.0480968,29.9935599 38.4339759,36.1598608 38.4173893,44.5454345 C38.4008027,52.9310082 33.211418,54.3568493 28.9008464,53.8122324 C24.5902749,53.2676154 21.8310348,49.2294636 23.1205935,40.447557 C24.4101522,31.6656505 17.4598348,23.8951876 20.1303192,18.992129 Z M19.5,15 C17.5670034,15 16,13.209139 16,11 C16,8.790861 17.5670034,7 19.5,7 C21.4329966,7 23,8.790861 23,11 C23,13.209139 21.4329966,15 19.5,15 Z M27.5,13.5 C26.1192881,13.5 25,12.2687831 25,10.75 C25,9.23121694 26.1192881,8 27.5,8 C28.8807119,8 30,9.23121694 30,10.75 C30,12.2687831 28.8807119,13.5 27.5,13.5 Z M33,15.5 C31.8954305,15.5 31,14.4926407 31,13.25 C31,12.0073593 31.8954305,11 33,11 C34.1045695,11 35,12.0073593 35,13.25 C35,14.4926407 34.1045695,15.5 33,15.5 Z M38,18.5 C36.8954305,18.5 36,17.4926407 36,16.25 C36,15.0073593 36.8954305,14 38,14 C39.1045695,14 40,15.0073593 40,16.25 C40,17.4926407 39.1045695,18.5 38,18.5 Z M42.5,20.5 C41.6715729,20.5 41,19.8284271 41,19 C41,18.1715729 41.6715729,17.5 42.5,17.5 C43.3284271,17.5 44,18.1715729 44,19 C44,19.8284271 43.3284271,20.5 42.5,20.5 Z" id="Combined-Shape" stroke="url(#linearGradient-3)" stroke-width="1.5"></path>
+                        <path d="M38,47.9716797 C41.3137085,47.9716797 44.1147461,45.684082 44.1147461,41.3146973 C44.1147461,38.4017741 42.0764974,34.6302083 38,30 C33.994222,34.6799316 31.991333,38.4514974 31.991333,41.3146973 C31.991333,45.5705566 34.6862915,47.9716797 38,47.9716797 Z" id="Oval" stroke="#9B79C1" fill="#EFE1FF" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M39.1853861,46.1299274 C38.91554,46.1885593 38.649256,46.0173364 38.5906241,45.7474903 C38.5319922,45.4776442 38.7032151,45.2113602 38.9730612,45.1527283 C40.7173737,44.7737256 41.3312386,43.5866621 40.8623191,41.3495225 C40.8056689,41.0792535 40.9788412,40.814233 41.2491103,40.7575828 C41.5193794,40.7009326 41.7843998,40.8741049 41.84105,41.144374 C42.4147738,43.8815182 41.5136647,45.6240411 39.1853861,46.1299274 Z" id="Path-45" fill="#FFFFFF" fill-rule="nonzero" transform="translate(40.293955, 43.444140) rotate(7.000000) translate(-40.293955, -43.444140) "></path>
+                        <circle id="Oval" fill="#FFFFFF" cx="41.5" cy="39.5" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
