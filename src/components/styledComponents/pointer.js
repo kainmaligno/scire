@@ -9,6 +9,7 @@ const Pointer = styled.p`
     font-size: 18px;	
     line-height: 17px;
     margin:3em;
+    margin-left:8em;
 `
 
 export default Pointer;

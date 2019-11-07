@@ -22,7 +22,7 @@ const CardContainer = styled.div`
   width: 45vw;
 `
 
-const Card = ({ image, title, btnInfo }) => (
+const Card = ({ image, title, btnInfo, btnLink }) => (
   <CardContainer>
     <Img
       title="consultas_img"
@@ -31,7 +31,7 @@ const Card = ({ image, title, btnInfo }) => (
     />
     <TextContainer>
       <Title>{title}</Title>
-      <Link to="/servicios_consulta" style={{ textDecorationLine: "none" }}>
+      <Link to={btnLink} style={{ textDecorationLine: "none" }}>
         <Button>
           <p>{btnInfo}</p>
         </Button>

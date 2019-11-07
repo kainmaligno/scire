@@ -36,11 +36,13 @@ const Services = () => {
           btnInfo
           title1
           title2
+          btnLinkConsulta
+          btnLinkEstudios
         }
       }
     }
   `)
-  const { title1, title2, btnInfo } = data.servicesDataJson.services
+  const { title1, title2, btnInfo,btnLinkConsulta, btnLinkEstudios } = data.servicesDataJson.services
   return (
     <Layout>
       <SEO title="Servicios" />
@@ -49,11 +51,13 @@ const Services = () => {
           image={data.consultas_img}
           title={title1}
           btnInfo={btnInfo}
+          btnLink={btnLinkConsulta}
         />
         <ServicesCard
           image={data.estudios_img}
           title={title2}
           btnInfo={btnInfo}
+          btnLink={btnLinkEstudios}
         />
       </ServicesContainer>
     </Layout>
