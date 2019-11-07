@@ -5,8 +5,8 @@ import FaceIcon from "../../../images/face.svg"
 import CallIcon from "../../../images/tel.svg"
 import Scire from "../../../images/Logo_scire.svg"
 import Button from "../../styledComponents/HeaderButton"
+import { Link } from "gatsby"
 import pallete from "../../../pallete"
-import { Link } from 'gatsby';
 
 const NavWrapper = styled.div`
   height: 115px;
@@ -124,12 +124,8 @@ const Navbar = () => (
             </Link>
           </LogoContainer>
           <UnorderList>
-                <li>
-                  <Link to="servicios">SERVICIOS</Link>
-                </li>
-                <li>
-                  <Link to = "quienes-somos">Quienes somos</Link>
-                </li>
+                <Link to='servicios'><li>SERVICIOS</li></Link>
+                <Link to='quienes-somos'> <li>QUIENES SOMOS</li> </Link>
                 <li>PREGUNTA AL EXPERTO</li>
                  <Button><p>AGENDA Y COTIZA</p></Button>
             </UnorderList>

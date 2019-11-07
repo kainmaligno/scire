@@ -1,5 +1,5 @@
 import styled  from "styled-components";
-import pallete from "../../pallete";
+import pallete from "../../../pallete";
 
 /*
     border      - border of the div
@@ -8,6 +8,12 @@ import pallete from "../../pallete";
 */
 
 export const Circle = styled.div`
-    border: ${ props => props.border || '0px'} ${ props => borderStyle || 'solid'} ${ props => props.colorStyle}
-    width : ${ props => props.width }
+    border             : ${ props => props.border || '1px'} ${ props => props.borderStyle || 'solid'} ${ props => props.colorStyle};
+    border-radius      : 50%;
+    background-image   : url("${props => props.src }");
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    height             : 50px;
+    width              : 50px;
 `

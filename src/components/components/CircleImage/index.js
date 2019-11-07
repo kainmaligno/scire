@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Circle } from './styles';
 
 const Circleimage = ( props ) => {
-    let { src } = props;
+    let { src, width, border } = props;
     return(
-        <div>
-            <img src = { src } />
-        </div>
+        <Circle width = { width } src = { src }>
+            
+        </Circle>
     )
 }
 

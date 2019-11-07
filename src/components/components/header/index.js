@@ -1,8 +1,6 @@
 import React from "react"
 import "./header.css"
 import PropTypes from "prop-types"
-import Navbar from "../Navbar"
-import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Button from "../../styledComponents/Button"
@@ -10,7 +8,6 @@ import Button from "../../styledComponents/Button"
 const Header = ({ siteTitle, image }) => (
 
   <header>
-    <Navbar />
     <div className="hero">
      <Img 
      title="header"
