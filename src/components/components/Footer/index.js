@@ -6,168 +6,154 @@ import phone from "../../../images/icon_tel.svg"
 import mail from "../../../images/email.svg"
 
 const Footer = () => (
-  <FooterWrapper>
-    <Footerheader>
+  <div>
+    <FooterHeader>
       <FooterContainer>
         <Marker>
-          <img src={map} width="140px" height="140px" />
+          <img src={map} width="200px" height="200px" />
           <div>
-            <img src={marker} />
+            <img src={marker} width="30px" />
             <p>
-              Torres Médicas Angelópolis Periférico Ecológico 3507, Reserva
-              Territorial Atlixcáyotl, 72830,
+              Torres Médicas Angelópolis Periférico Ecológico 3507, <br />
+              Reserva Territorial Atlixcáyotl, 72830,
               <br /> San Andres Cholula, Puebla, México.
             </p>
           </div>
         </Marker>
         <ContactContainer>
-          <Contact>
-            <img src={phone} />
-            <img src={mail} />
-          </Contact>
+          <p>CONTÁCTANOS:</p>
           <div>
-              <p>
-                <span style={{color:"#9B79C1"}}>CONTÁCTANOS:</span> 22 21691 802 22 2715 3842 contacto@scire.com.mx
-              </p>
-            </div>
+            <ContactImages>
+              <img src={phone} />
+              <img src={mail} />
+            </ContactImages>
+            <Contact>
+              <ul>
+                <li>22 21691 802 </li>
+                <li>22 2715 3842 </li>
+                <li>.</li>
+                <li>contacto@scire.com.mx</li>
+              </ul>
+            </Contact>
+          </div>
         </ContactContainer>
       </FooterContainer>
       <Info>
-        Sitio 100% seguro. Tu información es confidencial y está completamente
-        protegida.
+        SITIO 100% SEGURO. TU INFORMACIÓN ES CONFIDENCIAL Y ESTÁ COMPLETAMENTE
+        PROTEGIDA.
       </Info>
-    </Footerheader>
+    </FooterHeader>
     <FooterBottom>
-      SCIRE ® Todos los derechos reservados. Desarrollado por Spartan Devs.
+      SCIRE ® Todos los derechos reservados. Desarrollado por Spartan Dev.
     </FooterBottom>
-  </FooterWrapper>
+  </div>
 )
 
 export default Footer
 
-const FooterWrapper = styled.div`
-  height: 230px;
+const FooterHeader = styled.div`
+  height: auto;
+  padding: 2% 0;
   width: 100%;
-  /* padding: 20px 0; */
-  display: block;
-  overflow: hidden;
-`
-
-const Footerheader = styled.div`
-    height: 85%;	
-    width: 100%;	
-    background: linear-gradient(177.39deg, #492241 0%, #261B23 100%);}
-`
-const FooterBottom = styled.div`
-  height: 15%;
-  width: 100%;
-  background-color: #261b23;
-  color: #ffffff;
-  font-family: "Walkway SemiBold";
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
+  background: linear-gradient(177.39deg, #492241 0%, #261b23 100%);
+  color: #ae9caa;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+`
+const FooterBottom = styled.div`
+  height: 10%;
+  background-color: #261b23;
+  color: #ae9caa;
+  font-family: "Walkway SemiBold";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  @media (max-width: 930px) {
+    font-size: 11px;
+  }
 `
 const FooterContainer = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-around;
-  height: 80%;
-  padding-top: 26px;
-  /** estilo por div dentro de el footer header  */
-  div {
-    height: 80%;
-    width: 46%;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+  height: 90%;
+  width: 90%;
+  @media (max-width: 930px) {
+    justify-content: center;
+    margin-top: 5%;
   }
 `
-/**estilo individual por espacio */
 const Marker = styled.div`
+  width: 55%;
+  justify-content: space-between;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   div {
-    height: 100%;
-    width: 46%;
-    margin: 10px;
-    margin-left:30px;
-    text-align: center;
+    margin-top: 20px;
+    //margin-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 60px;
-
     p {
-      height: 5.42%;
-      width: 91%;
-      color: #ffffff;
+      color: #ae9caa;
       font-family: "Walkway SemiBold";
-      font-size: 17px;
-      line-height: 15px;
-      text-align:justify;
+      font-size: 20px;
     }
   }
 `
-
 const ContactContainer = styled.div`
+  margin: 10px 0;
+  padding-right: 10%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  div {
-    height: 100%;
-    width: 46%;
-    margin: 10px;
-    margin-left:30px;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    width: 90%;
     text-align: center;
+    color: #9b79c1;
+    font-family: "Gotham Condensed";
+    font-size: 18px;
+  }
+  div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 60px;
-    p {
-      height: 9.16%;
-      width: 18%;
-      color: #ffffff;
-      font-family: "Walkway SemiBold";
-      font-size: 12px;
-      line-height: 24px;
-      margin-top:-15px;
-    }
+    height: 95%;
+  }
+  @media (max-width: 930px) {
+    padding-right: 0;
   }
 `
-
+const ContactImages = styled.aside`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 30px;
+    margin: 10px;
+  }
+`
 const Contact = styled.aside`
-display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 28%;
-    height: 85%;
-    padding-top: 58px;
-
-    img{
-        margin-bottom:20px;
-    }
-    div{
-        
-    }
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 30px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0 40px;
+  }
 `
 const Info = styled.div`
-    margin-top: -25px;
-    height: 12px;
-    color: #FFFFFF;
-    font-family: "Walkway SemiBold";
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
-  
+  color: #ae9caa;
+  font-family: "Walkway SemiBold";
+  font-size: 16px;
+  text-align: center;
+  @media (max-width: 930px) {
+    margin-top: 20px;
+  }
 `
