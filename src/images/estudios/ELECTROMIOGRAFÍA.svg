@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53 (72520) - https://sketchapp.com -->
+    <title>F7B8F0EC-1940-45BA-87F0-205FF6ECEEE3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+        <filter x="-11.7%" y="-8.3%" width="123.3%" height="123.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.446586277   0 0 0 0 0.162176853   0 0 0 0 0.368513102  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="52.3251155%" y1="37.7867954%" x2="33.7026353%" y2="89.6079401%" id="linearGradient-3">
+            <stop stop-color="#AA5397" offset="0%"></stop>
+            <stop stop-color="#72295E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.3719064%" y1="37.7867954%" x2="26.3653943%" y2="89.6079401%" id="linearGradient-4">
+            <stop stop-color="#AA5397" offset="0%"></stop>
+            <stop stop-color="#72295E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="propuesta-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="servicios_estudios" transform="translate(-379.000000, -682.000000)">
+            <g id="CARD_ESTUDIO-2" transform="translate(363.000000, 660.000000)">
+                <g id="1">
+                    <g id="estudio/electroencefalograma" transform="translate(20.000000, 24.000000)">
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M27,20 C28.0071615,22.5947266 29.5807292,23.2434082 31.7207031,21.9460449 C34.9306641,20 43.5424805,23.9460449 41.9697266,29.9460449 C40.921224,33.9460449 41.9774577,37.2793783 45.1384277,39.9460449" id="Path-29" stroke="#72295E"></path>
+                        <path d="M27.3615723,16.291748 C29.5493978,17.7199707 31.7142741,17.4825846 33.8562012,15.5795898 C37.0690918,12.7250977 40,10.440041 44,12.6967773 C48,14.9535137 46.4440918,23.9030762 52,25.1535645" id="Path-30" stroke="#72295E"></path>
+                        <circle id="Oval" stroke="#9B79C1" fill="#FFFFFF" cx="52" cy="26" r="4"></circle>
+                        <circle id="Oval-Copy-10" stroke="#9B79C1" fill="#FFFFFF" cx="46" cy="40" r="4"></circle>
+                        <circle id="Oval" stroke="#9B79C1" fill="#EFE1FF" cx="52" cy="26" r="2"></circle>
+                        <circle id="Oval-Copy-11" stroke="#9B79C1" fill="#EFE1FF" cx="46" cy="40" r="2"></circle>
+                        <path d="M26.3615723,12.8178711 L5.59048462,12.8178711 L5.42547607,12.8178711 L6.53189087,11.3178711 L27.1115723,11.3178711 C27.5257858,11.3178711 27.8615723,11.6536575 27.8615723,12.0678711 L27.8615723,45.0617676 C27.8615723,45.4759811 27.5257858,45.8117676 27.1115723,45.8117676 L4.50918579,45.8117676 L3.63174438,44.3117676 L26.3615723,44.3117676 L26.3615723,12.8178711 Z" id="Combined-Shape" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+                        <path d="M21.8268156,29.7548291 L20.3824536,25.0544009 L18.0683736,34.7509778 C17.9546147,35.2276563 17.2941963,35.2731246 17.1161839,34.8165338 L15.0132994,29.4227647 L12.611246,32.0893535 C12.3917708,32.3329993 12.001118,32.302968 11.8214619,32.028639 L9.91130402,29.11189 L7.91823384,37.9733882 C7.79313233,38.5296089 6.98393064,38.476599 6.93246163,37.9088114 L5.56937515,22.871733 L3.8645086,32.8993823 C3.78059576,33.3929392 3.10386523,33.4705327 2.91041691,33.0087779 L0.163513184,26.6479492 L0.418579102,25.0544009 L3.16730636,31.03399 L5.22753241,18.9161943 C5.32567452,18.3389441 6.16555635,18.3717182 6.21841728,18.9548609 L7.64103284,34.6486427 L9.19480327,27.7403391 C9.29172445,27.3094126 9.85891509,27.2066186 10.1009014,27.5761237 L12.3025345,30.9379459 L14.8130704,28.1509275 C15.0621542,27.8744124 15.5152331,27.9572122 15.6504176,28.3039521 L17.4669389,32.9632168 L19.835435,23.0386228 C19.953642,22.5433057 20.6501474,22.5210596 20.7997218,23.0078237 L21.8268156,26.3503242 L21.8268156,16.1741208 L5.5390125,16.1741208 L3.37393188,16.1741208 L4.00305176,15 L22.4149337,15 C22.7397423,15 23.0030518,15.2628359 23.0030518,15.5870604 L23.0030518,41.4129396 C23.0030518,41.7371641 22.7397423,42 22.4149337,42 L2.49588013,42 L2,40.8258792 L21.8268156,40.8258792 L21.8268156,29.7548291 Z" id="Combined-Shape" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

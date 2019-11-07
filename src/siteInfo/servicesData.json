@@ -3,7 +3,10 @@
     "services": {
       "title1": "CONSULTA MÉDICA",
       "title2": "ESTUDIOS",
-      "btnInfo": "CONOCER MÁS"
+      "btnInfo": "CONOCER MÁS",
+      "btnLinkConsulta":"/servicios_consulta",
+      "btnLinkEstudios":"/servicios_estudios"
+
     },
     "services_consulta": {
       "title": "EL PACIENTE SIEMPRE ES PRIMERO",

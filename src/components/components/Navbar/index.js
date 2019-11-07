@@ -117,7 +117,7 @@ const Navbar = () => (
 
       <NavListContainer>
         <NavListWrapper>
-          <Link to="/">
+          <Link to="/" style={{ textDecorationLine: "none" }}>
             <LogoContainer>
               <img src={Scire} alt="logo Scire" widt="150px" height="60px" />
             </LogoContainer>
@@ -125,9 +125,9 @@ const Navbar = () => (
           <UnorderList>
             <li>
               {" "}
-              <Link to="/servicios">SERVICIOS</Link>
+              <Link to="/servicios" style={{ textDecorationLine: "none" }}>SERVICIOS</Link>
             </li>
-            <Link to="/nosotros">
+            <Link to="/nosotros" style={{ textDecorationLine: "none" }}>
               <li>QUIENES SOMOS</li>
             </Link>
             <li>PREGUNTA AL EXPERTO</li>
