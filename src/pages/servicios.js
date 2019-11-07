@@ -10,6 +10,11 @@ const ServicesContainer = styled.div`
   justify-content: space-around;
   padding: 2%;
   width: 95vw;
+  @media (max-width: 850px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const Services = () => {
@@ -42,7 +47,13 @@ const Services = () => {
       }
     }
   `)
-  const { title1, title2, btnInfo,btnLinkConsulta, btnLinkEstudios } = data.servicesDataJson.services
+  const {
+    title1,
+    title2,
+    btnInfo,
+    btnLinkConsulta,
+    btnLinkEstudios,
+  } = data.servicesDataJson.services
   return (
     <Layout>
       <SEO title="Servicios" />

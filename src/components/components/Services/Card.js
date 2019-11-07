@@ -15,11 +15,17 @@ const TextContainer = styled.div`
   position: absolute;
   margin-left: 3%;
   margin-top: 25%;
+  @media (max-width: 850px) {
+    margin-top: 45%;
+  }
 `
 const CardContainer = styled.div`
   margin-bottom: 3%;
   display: flex;
   width: 45vw;
+  @media (max-width: 850px) {
+    width: 90vw;
+  }
 `
 
 const Card = ({ image, title, btnInfo, btnLink }) => (
