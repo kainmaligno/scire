@@ -87,9 +87,10 @@ const ServiciosEstudios = () => {
       </article>
       <GridContainer>
         <CardContainer>
-          {infoData.length? (
+          <StudiesCard/>
+          {/* {infoData.length? (
              infoData.map((item, i) => <StudiesCard name={item.name} image={item.img} key={i}/>)
-          ) : (<div>Loading...</div>)}
+          ) : (<div>Loading...</div>)} */}
         </CardContainer>
       </GridContainer>
     </Layout>
