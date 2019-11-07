@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/components/header"
 import Pointer from "../components/styledComponents/pointer"
-// import Solocards from '../components/styledComponents/Solocards'
 import StudiesCard from '../components/styledComponents/StudiesCard'
+import infoData from '../components/styledComponents/Solocards'
 const ArticleTitle = styled.div`
   display: flex;
   flex-direction: column;
@@ -74,7 +74,6 @@ const ServiciosEstudios = () => {
     pointer,
     articleTitle,
   } = data.servicesDataJson.services_estudios
-
   return (
     <Layout>
       <SEO title="Servicios | Estudios" />
@@ -88,15 +87,9 @@ const ServiciosEstudios = () => {
       </article>
       <GridContainer>
         <CardContainer>
-          <StudiesCard/>
-          <StudiesCard/>
-          <StudiesCard/>
-          <StudiesCard/>
-          <StudiesCard/>
-          <StudiesCard/>
-          <StudiesCard/>
-          <StudiesCard/>
-          <StudiesCard/>
+          {infoData.length? (
+             infoData.map((item, i) => <StudiesCard name={item.name} image={item.img} key={i}/>)
+          ) : (<div>Loading...</div>)}
         </CardContainer>
       </GridContainer>
     </Layout>

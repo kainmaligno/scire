@@ -16,7 +16,7 @@ const HeaderButton = styled.button`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  span {
+  span{
     color: ${pallete.color.secondary.main};
     font-family: "Gotham Condensed";
     font-size: 18px;
