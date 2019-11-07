@@ -1,12 +1,22 @@
 import React            from 'react';
-import ButtonDoctoralia from '../ButtonDoctoralia';
-import SideImg          from './SideImg';
+import ButtonDoctoralia      from '../ButtonDoctoralia';
+import SideImg               from './SideImg';
+import { Side, Images, Img } from './styles';
 
-export const SideBarDoctor = ( props ) => {
+const SideBarDoctor = ( props ) => {
+    let { logos } = props;
     return(
-        <div>
-            <ButtonDoctoralia/>
-            <ButtonDoctoralia/>
-        </div>
+        <Side>  
+            <ButtonDoctoralia />
+            <Images>
+                {
+                    logos.map( logo => {
+                        return  <Img src = { logo } />
+                    })
+                }
+            </Images>
+        </Side>
     )
 }
+
+export default SideBarDoctor;

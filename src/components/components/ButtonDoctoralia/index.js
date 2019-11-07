@@ -5,7 +5,7 @@ const ButtonDoctoralia = ( props ) => {
     let { href } = props;
     return(
         <Button>
-            VER PERFIL EN DOCTORALIA 
+            VER PERFIL EN DOCTORALIA
         </Button>
     )
 }

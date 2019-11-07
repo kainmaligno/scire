@@ -5,13 +5,13 @@ import Img from 'gatsby-image'
 
 import Button from "../../styledComponents/Button"
 //todo al contenedor de informacion hacer position relative y z-index *2 
-const Header = ({ siteTitle, image }) => (
+const Header = ({ image, title, body, btnInfo }) => (
 
   <header>
     <div className="hero">
      <Img 
      title="header"
-     alt="neuro Scire header" 
+     alt="" 
      fluid={image.childImageSharp.fluid}
      style={{
       position: "absolute",
@@ -23,20 +23,13 @@ const Header = ({ siteTitle, image }) => (
      />
      <div className="infoContainer">
       <div className="innerTitle-container">
-        <p className="innerTitle">
-                  Una empresa creada
-          por seres humanos
-          para el cuidado y la salud de
-          otros seres humanos
-        </p>
+        <p className="innerTitle"> {title} </p>
       </div>
       <div className="innerText-container">
-          <p className="innerText">
-          Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología.
-          </p>
+          <p className="innerText">{body}</p>
       </div>
       <div className="button-container">
-          <Button><p>AGENDA TU CITA</p></Button>
+          <Button><p>{btnInfo}</p></Button>
       </div>
     </div>
     </div>

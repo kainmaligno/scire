@@ -17,7 +17,6 @@ import styled from 'styled-components'
 
 const Lay = styled.div`
   position: relative;
-
 `;
 
 const Layout = ({ children, props }) => {
@@ -29,14 +28,6 @@ const Layout = ({ children, props }) => {
           title
         }
       }
-      header:file(relativePath:{ eq: "neuro_man.png"}){
-                childImageSharp{
-                  fluid(maxWidth:1200){
-                    originalName
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
     }
   
   `)

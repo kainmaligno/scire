@@ -14,6 +14,6 @@ export const Circle = styled.div`
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
-    height             : 50px;
-    width              : 50px;
+    height             : 100px;
+    width              : 100px;
 `

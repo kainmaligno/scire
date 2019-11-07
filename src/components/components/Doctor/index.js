@@ -1,26 +1,31 @@
-import React       from 'react';
-import CircleImage from '../CircleImage';
-import SideBarDoctor from '../ButtonDoctoralia';
+import React         from "react";
+import CircleImage   from '../CircleImage';
+import SideBarDoctor from '../SideBarDoctor';
+import { Container, Info, Name, PF  } from './styles';
+
 
 const Doctor = ( props ) => {
-    let { src, name, title, cedula, info, width, border } = props.data;
+    let { name, srcLink, cedula, info, titleDoctor, Salle, logos  } = props;
     return(
-        <div>
-            <CircleImage
-                src   = { src }
-                width = { width }
-                border = { border }
+        <Container>
+            <Info>
+                <CircleImage
+                    src = { srcLink }
+                    width = { "150px" }
+                />
+                <Name>{ name }</Name>
+                <PF>{ titleDoctor }</PF>
+                <PF>{ cedula }</PF>
+                {
+                    info.map( phar => {
+                        return <p>{ phar }</p>
+                    })
+                }
+            </Info>
+            <SideBarDoctor
+                logos = { logos }
             />
-            <p>{ name }</p>
-            <p>{ title }</p>
-            <p>{ cedula  }</p>
-            {
-                info.map( (par, i) => {
-                    return <p key = { i }>{ par }</p>
-                })
-            }
-            <SideBarDoctor/>
-        </div>
+        </Container>
     )
 }
 
