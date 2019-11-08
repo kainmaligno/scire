@@ -1,6 +1,8 @@
 ---
 title: "ELECTROENCEFALOGRAMA"
 info:  "Prueba no invasiva que permite evaluar el funcionamiento cerebral en tiempo real."
+img: "https://res.cloudinary.com/drakarzamael/image/upload/v1573178567/estudiosMini/ELECTROENCEFALOGRAMA.svg"
+blogImg: "https://res.cloudinary.com/drakarzamael/image/upload/v1573178919/estudiosBlog/ELECTROENCEFALOGRAMA_open.svg"
 ---
 
 Electroencefalograma (electroencefalograma simple,

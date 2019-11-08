@@ -75,6 +75,7 @@ const ServiciosEstudios = () => {
                   }
                 frontmatter {
                   title
+                  img
                 }  
               }
             }
@@ -106,7 +107,8 @@ const ServiciosEstudios = () => {
           { data.allMarkdownRemark.edges.length ? (
              data.allMarkdownRemark.edges.map((item, i) => 
              <StudiesCard 
-             title={item.node.frontmatter.title} 
+             title={item.node.frontmatter.title}
+             image={item.node.frontmatter.img} 
              slug={item.node.fields.slug} 
              key={i}/>)
           ) : (<div>Loading...</div>)}

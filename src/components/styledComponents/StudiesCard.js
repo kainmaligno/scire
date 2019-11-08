@@ -43,16 +43,16 @@ const CardInfo = styled.div`
 `
 
 
-const StudiesCard = ({title,slug }) => { 
+const StudiesCard = ({title,slug,image }) => { 
   return(
     <>
 <CardStudio>
     <CardInfo>
-      <img src={electro} alt="studios" />
+      <img src={image} alt="studios" />
       <span>{title}</span>
     </CardInfo>
     <div>
-      <Link to={`/estudios/${slug}`}>
+      <Link to={`/estudios/${slug}`} style={{textDecorationLine:"none"}}>
       <Button>
         <span>VER DETALLES</span>
       </Button>
