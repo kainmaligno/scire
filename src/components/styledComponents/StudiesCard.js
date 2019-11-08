@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Button from "../styledComponents/HeaderButton"
-
+import { Link } from 'gatsby'
 import electro from '../../images/estudios/ELECTROENCEFALOGRAMA.svg'
 import mio from '../../images/estudios/ELECTROMIOGRAFÍA.svg'
 import nerv from '../../images/estudios/VELOCIDADES DE CONDUCCIÓN NERVIOSA.svg'
@@ -43,10 +43,24 @@ const CardInfo = styled.div`
 `
 
 
-const StudiesCard = ({name, img}) => { 
+const StudiesCard = ({title,slug }) => { 
   return(
     <>
-    <CardStudio>
+<CardStudio>
+    <CardInfo>
+      <img src={electro} alt="studios" />
+      <span>{title}</span>
+    </CardInfo>
+    <div>
+      <Link to={`/estudios/${slug}`}>
+      <Button>
+        <span>VER DETALLES</span>
+      </Button>
+      </Link>  
+    </div>
+  </CardStudio>
+  
+    {/* <CardStudio>
     <CardInfo>
       <img src={electro} alt="studios" />
       <span>ELECTROENCEFALOGRAMA</span>
@@ -144,7 +158,7 @@ const StudiesCard = ({name, img}) => {
         <span>VER DETALLES</span>
       </Button>
     </div>
-  </CardStudio>
+  </CardStudio> */}
   </>
   )
 }
