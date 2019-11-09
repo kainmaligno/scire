@@ -15,13 +15,14 @@
     "gatsby-plugin-styled-components": "^3.1.11",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-json": "^2.2.16",
+    "gatsby-transformer-remark": "^2.6.32",
     "gatsby-transformer-sharp": "^2.3.2",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.4.0",
-    "uikit": "^3.2.2"
+    "uikit": "^3.2.3"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

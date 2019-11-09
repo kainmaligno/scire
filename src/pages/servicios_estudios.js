@@ -7,6 +7,7 @@ import Header from "../components/components/header"
 import Pointer from "../components/styledComponents/pointer"
 import StudiesCard from '../components/styledComponents/StudiesCard'
 import infoData from '../components/styledComponents/Solocards'
+
 const ArticleTitle = styled.div`
   display: flex;
   flex-direction: column;
@@ -65,6 +66,19 @@ const ServiciosEstudios = () => {
           articleTitle
         }
       }
+      allMarkdownRemark {
+            edges {
+              node {
+                  fields{
+                      slug
+                  }
+                frontmatter {
+                  title
+                  img
+                }  
+              }
+            }
+          }
     }
   `)
   const {
@@ -87,10 +101,15 @@ const ServiciosEstudios = () => {
       </article>
       <GridContainer>
         <CardContainer>
-          <StudiesCard/>
-          {/* {infoData.length? (
-             infoData.map((item, i) => <StudiesCard name={item.name} image={item.img} key={i}/>)
-          ) : (<div>Loading...</div>)} */}
+          {/* <StudiesCard/> */}
+          { data.allMarkdownRemark.edges.length ? (
+             data.allMarkdownRemark.edges.map((item, i) => 
+             <StudiesCard 
+             title={item.node.frontmatter.title}
+             image={item.node.frontmatter.img} 
+             slug={item.node.fields.slug} 
+             key={i}/>)
+          ) : (<div>Loading...</div>)}
         </CardContainer>
       </GridContainer>
     </Layout>

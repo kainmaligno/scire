@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "Walkway SemiBold"   ;
+  font-family: "Walkway SemiBold";
   src: url("../fonts/WalkwaySemiBold.woff2") format("woff2"),
     url("../fonts/WalkwaySemiBold.woff") format("woff"),
     url("../fonts/WalkwaySemiBold.ttf") format("truetype");
@@ -28,13 +28,13 @@ body {
   padding: 0;
   font-family: "Walkway SemiBold";
 }
-.article-container{
-    margin: 4em 4em 2em 4em;
-    padding: 4em 4em 2em 4em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.article-container {
+  margin: 4em 4em 2em 4em;
+  padding: 4em 4em 2em 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .services-back1:before {
   content: "CONSULTA";
@@ -70,97 +70,118 @@ body {
   user-select: none;
 }
 .services-back2:before {
-    content: " MEDICA";
-    clear: right;
-    height: 96px;
-    width: 621px;
-    opacity: 0.7;
-    color: #eef8f9;
-    font-family: Arial;
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 48px;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:flex-end;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin-left: -99px;
-    margin-top: -46px;
-  
-    -webkit-pointer-events: none;
-    -moz-pointer-events: none;
-    -ms-pointer-events: none;
-    -o-pointer-events: none;
-    pointer-events: none;
-  
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-  }
-  .serices-title{
-    width: 100%;
-  }
-  .services-title:before {
-    content: "ESTUDIOS";
-    clear: right;
-    height: 96px;
-    width: 100%;
-    opacity: 0.7;
-    color: #eef8f9;
-    font-family: Arial;
-    font-size: 70px;
-    font-weight: bold;
-    line-height: 48px;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  
-    -webkit-pointer-events: none;
-    -moz-pointer-events: none;
-    -ms-pointer-events: none;
-    -o-pointer-events: none;
-    pointer-events: none;
-  
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-  }
+  content: " MEDICA";
+  clear: right;
+  height: 96px;
+  width: 621px;
+  opacity: 0.7;
+  color: #eef8f9;
+  font-family: Arial;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 48px;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: -99px;
+  margin-top: -46px;
 
-  .info-container{
-    margin-bottom: 50px;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
 
-  }
-  .info{
-    margin-top: -50px;
-    height: 60px;
-    width: 571px;
-    color: #6D6D6D;
-    font-family: "Walkway SemiBold";
-    font-size: 18px;
-    line-height: 20px;
-    text-align: justify;
-    position: absolute;
-  }
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.serices-title {
+  width: 100%;
+}
+.services-title:before {
+  content: "ESTUDIOS";
+  clear: right;
+  height: 96px;
+  width: 100%;
+  opacity: 0.7;
+  color: #eef8f9;
+  font-family: Arial;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 48px;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
-  .services-image-container{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.info-container {
+  margin-bottom: 50px;
+}
+.info {
+  margin-top: -50px;
+  height: 60px;
+  width: 571px;
+  color: #6d6d6d;
+  font-family: "Walkway SemiBold";
+  font-size: 18px;
+  line-height: 20px;
+  text-align: justify;
+  position: absolute;
+}
+
+.services-image-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-ul li{
+  height: 21px;
+  width: 590px;
+  color: #72295e;
+  font-family: "Walkway SemiBold";
+  font-size: 20px;
+  line-height: 21px;
+  margin:20px;
+}
+.post-ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.post-ul span{
+  height: 40px;	width: 620px;	color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 20px;	line-height: 20px;
 }

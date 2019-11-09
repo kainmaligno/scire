@@ -13,8 +13,11 @@ import Header from "./components/header"
 import Footer from "./components/Footer"
 import "./layout.css"
 import styled from 'styled-components'
-
-
+//uikit configuration 
+import UIkit from "uikit"
+import icons from "uikit/dist/js/uikit-icons"
+import "uikit/dist/css/uikit.min.css"
+UIkit.use(icons)
 const Lay = styled.div`
   position: relative;
 `;
