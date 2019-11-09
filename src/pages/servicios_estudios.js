@@ -8,7 +8,6 @@ import Pointer from "../components/styledComponents/pointer"
 import StudiesCard from '../components/styledComponents/StudiesCard'
 import infoData from '../components/styledComponents/Solocards'
 
-infoData.map(item => console.log(item))
 const ArticleTitle = styled.div`
   display: flex;
   flex-direction: column;
@@ -89,7 +88,6 @@ const ServiciosEstudios = () => {
     pointer,
     articleTitle,
   } = data.servicesDataJson.services_estudios
-   console.log(data)
   return (
     <Layout>
       <SEO title="Servicios | Estudios" />

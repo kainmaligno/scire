@@ -22,7 +22,7 @@
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.4.0",
-    "uikit": "^3.2.2"
+    "uikit": "^3.2.3"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
