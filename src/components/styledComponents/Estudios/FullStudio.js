@@ -43,6 +43,26 @@ const ButtonContainer = styled.div`
   width: 96%;
   padding: 2em;
 `
+const DividerContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+const Divider = styled.hr`
+	box-sizing: border-box;	height: 1px;	width: 90%;	border: 1px solid #643156;
+`
+const TextDivider = styled.div`
+height: 90px; 
+width: 90%;
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+p{
+  height: 22px;	width: 100vw;	 text-align:center; color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 20px;	line-height: 17px;
+}
+`
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -87,7 +107,15 @@ const FullStudio = props => {
           <p>AGENDAR MI CITA</p>
         </Button>
       </ButtonContainer>
-
+      
+      <DividerContainer>
+      <Divider/>
+        <TextDivider>
+          <p>
+          Consulta a tu Médico y recuerda que él es quien debe prescribir e interpretar los estudios. Los estudios realizados sirven como apoyo al diagnóstico.
+          </p>
+        </TextDivider>
+      </DividerContainer>
      <Slider/>
     </Layout>
   )
