@@ -16,20 +16,9 @@ const Lay = styled.div`
 const Layout = ({ children, props }) => {
   useEffect(()=>{
     UIkit.use(icons)
-  })
-  const data = useStaticQuery(graphql`
-    query {
-       title:site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  
-  `)
-`
+  })  
 
-const Layout = ({ children }) => {
+
   return (
     <Lay>
       <NavBar />
@@ -37,10 +26,11 @@ const Layout = ({ children }) => {
       <Footer />
     </Lay>
   )
-}
 
+
+
+}
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
 export default Layout
