@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 const Title = styled.span`
   font-size: 30px;
   color: white;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 `
 const TextContainer = styled.div`
   display: flex;
