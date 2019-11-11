@@ -41,25 +41,28 @@ const ServiciosConsulta = () => {
       <Header image={data.header} title={title} body={body} btnInfo={btnInfo} />
       <Pointer>{pointer}</Pointer>
       <article className="article-container">
-        <div>
+        <div className="container">
           <div>
             <div className="services-back1" />
             <div className="services-back2" />
           </div>
 
-          <div className="info-container">
-            <p className="info">
-              Vive la experiencia de una atención médica del más alto nivel de
-              calidad con expertos en neurología avalados nacional e
-              internacionalmente quienes te brindarán la atención que necesitas.
-            </p>
-          </div>
-          <div>
-            <Link to="/agendar" style={{ textDecorationLine: "none" }}>
-              <Button>
-                <span>AGENDAR MI CITA</span>
-              </Button>
-            </Link>
+          <div className="text-container">
+            <div className="info-container">
+              <p className="info">
+                Vive la experiencia de una atención médica del más alto nivel de
+                calidad con expertos en neurología avalados nacional e
+                internacionalmente quienes te brindarán la atención que
+                necesitas.
+              </p>
+            </div>
+            <div>
+              <Link to="/agendar" style={{ textDecorationLine: "none" }}>
+                <Button>
+                  <span>AGENDAR MI CITA</span>
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
 
