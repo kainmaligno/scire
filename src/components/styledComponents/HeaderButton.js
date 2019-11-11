@@ -1,9 +1,6 @@
-import React from "react"
 import styled from "styled-components"
 import pallete from "../../pallete"
-/**
- * when use a button always add p tag
- */
+
 const HeaderButton = styled.button`
   box-sizing: border-box;
   height: 48px;

@@ -1,19 +1,9 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import NavBar from './components/Navbar'
-import Header from "./components/header"
+import NavBar from "./components/Navbar"
 import Footer from "./components/Footer"
 import "./layout.css"
-import styled from 'styled-components'
-//uikit configuration 
+import styled from "styled-components"
 import UIkit from "uikit"
 import icons from "uikit/dist/js/uikit-icons"
 import "uikit/dist/css/uikit.min.css"
@@ -21,26 +11,14 @@ UIkit.use(icons)
 
 const Lay = styled.div`
   position: relative;
-`;
+`
 
-const Layout = ({ children, props }) => {
-  
-  const data = useStaticQuery(graphql`
-    query {
-       title:site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  
-  `)
-
+const Layout = ({ children }) => {
   return (
     <Lay>
-           <NavBar/>
-            <main>{children}</main>
-        <Footer/>
+      <NavBar />
+      <main>{children}</main>
+      <Footer />
     </Lay>
   )
 }
@@ -50,4 +28,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-

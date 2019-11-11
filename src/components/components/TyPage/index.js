@@ -19,6 +19,11 @@ const TextContainer = styled.div`
     letter-spacing: 1.2px;
     line-height: 28px;
     text-align: center;
+    @media (max-width: 720px) {
+      font-size: 22px;
+      width: 80vw;
+      letter-spacing: 0px;
+    }
   }
   span {
     color: #16a1b2;
@@ -26,6 +31,9 @@ const TextContainer = styled.div`
     font-size: 60px;
     font-weight: 300;
     line-height: 41px;
+    @media (max-width: 720px) {
+      font-size: 50px;
+    }
   }
 `
 

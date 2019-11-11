@@ -1,10 +1,6 @@
-import React from "react"
 import styled from "styled-components"
 import pallete from "../../pallete"
 
-/**
- * when use a button always add p tag
- */
 const Button = styled.button`
   height: 55px;
   width: 280px;

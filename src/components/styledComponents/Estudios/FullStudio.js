@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../../layout"
 import Pointer from "../pointer"
@@ -44,24 +44,33 @@ const ButtonContainer = styled.div`
   padding: 2em;
 `
 const DividerContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 const Divider = styled.hr`
-	box-sizing: border-box;	height: 1px;	width: 90%;	border: 1px solid #643156;
+  box-sizing: border-box;
+  height: 1px;
+  width: 90%;
+  border: 1px solid #643156;
 `
 const TextDivider = styled.div`
-height: 90px; 
-width: 90%;
-display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-p{
-  height: 22px;	width: 100vw;	 text-align:center; color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 20px;	line-height: 17px;
-}
+  height: 90px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  p {
+    height: 22px;
+    width: 100vw;
+    text-align: center;
+    color: #6d6d6d;
+    font-family: "Walkway SemiBold";
+    font-size: 20px;
+    line-height: 17px;
+  }
 `
 export const query = graphql`
   query($slug: String!) {
@@ -76,7 +85,6 @@ export const query = graphql`
       }
       html
     }
-   
   }
 `
 const FullStudio = props => {
@@ -103,20 +111,24 @@ const FullStudio = props => {
         </div>
       </PostContainer>
       <ButtonContainer>
-        <Button>
-          <p>AGENDAR MI CITA</p>
-        </Button>
+        <Link to="/agendar" style={{ textDecorationLine: "none" }}>
+          <Button>
+            <p>AGENDAR MI CITA</p>
+          </Button>
+        </Link>
       </ButtonContainer>
-      
+
       <DividerContainer>
-      <Divider/>
+        <Divider />
         <TextDivider>
           <p>
-          Consulta a tu Médico y recuerda que él es quien debe prescribir e interpretar los estudios. Los estudios realizados sirven como apoyo al diagnóstico.
+            Consulta a tu Médico y recuerda que él es quien debe prescribir e
+            interpretar los estudios. Los estudios realizados sirven como apoyo
+            al diagnóstico.
           </p>
         </TextDivider>
       </DividerContainer>
-     <Slider/>
+      <Slider />
     </Layout>
   )
 }

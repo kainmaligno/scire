@@ -1,5 +1,5 @@
 import React from "react"
-import {  useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/components/header"
@@ -55,9 +55,11 @@ const ServiciosConsulta = () => {
             </p>
           </div>
           <div>
-            <Button>
-              <span>AGENDAR MI CITA</span>
-            </Button>
+            <Link to="/agendar" style={{ textDecorationLine: "none" }}>
+              <Button>
+                <span>AGENDAR MI CITA</span>
+              </Button>
+            </Link>
           </div>
         </div>
 
