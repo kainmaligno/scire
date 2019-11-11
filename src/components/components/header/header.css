@@ -1,81 +1,79 @@
 @font-face {
-    font-family: 'Gotham Condensed';
-    src: url('../../../fonts/GothamCondensed-Book.woff2') format('woff2'),
-        url('../../../fonts/GothamCondensed-Book.woff') format('woff'),
-        url('../../../fonts/GothamCondensed-Book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham Condensed";
+  src: url("../../../fonts/GothamCondensed-Book.woff2") format("woff2"),
+    url("../../../fonts/GothamCondensed-Book.woff") format("woff"),
+    url("../../../fonts/GothamCondensed-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face{
-    font-family: '"Walkway SemiBold';
-    src: url('../../../fonts/WalkwayBold.woff2')format('woff2'),
-        url('../../../fonts/WalkwaySemiBold.woff')format('woff'),
-        url('../../../fonts/WalkwaySemiBold.ttf')format('truetype');
-        font-weight: normal;
-        font-style: normal;
+@font-face {
+  font-family: '"Walkway SemiBold';
+  src: url("../../../fonts/WalkwayBold.woff2") format("woff2"),
+    url("../../../fonts/WalkwaySemiBold.woff") format("woff"),
+    url("../../../fonts/WalkwaySemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-
-
-
-
-
-.hero{
-    height: 63vh;
-    overflow: hidden;
-    position: relative;
+.hero {
+  height: 63vh;
+  overflow: hidden;
+  position: relative;
 }
 
-.infoContainer{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    z-index: 2;
-    margin-left: 60px;
-    margin-top: 60px;
-    height: 400px;
-    width: 483px;
+.infoContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 2;
+  margin-left: 60px;
+  margin-top: 60px;
+  height: 400px;
+  width: 483px;
 }
 
-.innerTitle-container{
-
+.innerTitle-container {
 }
-.innerTitle{
-    color: #16A1B2;	font-family: "Gotham Condensed";	font-size: 40px;	font-weight: 300;	line-height: 41px;   margin-bottom: 20px;
-
+.innerTitle {
+  color: #16a1b2;
+  font-family: "Gotham Condensed";
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 41px;
+  margin-bottom: 20px;
 }
 
-.inneText-container{
-
+.inneText-container {
 }
-.innerText{
-    color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 18px;	letter-spacing: 0.4px;	line-height: 19px;     margin-bottom: 50px;
-
+.innerText {
+  color: #6d6d6d;
+  font-family: "Walkway SemiBold";
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  line-height: 19px;
+  margin-bottom: 50px;
 }
 /*de 1020 para arriba */
-@media  only screen  and (min-width: 1020px){
-   .hero{
+@media only screen and (min-width: 1020px) {
+  .hero {
     height: 63vh;
     overflow: hidden;
     position: relative;
-    
-   }
-   /* .hero img{
+  }
+  /* .hero img{
     height: 80px;
 
    } */
 }
 
-@media only screen and (max-width:768px){
-    
-
+@media only screen and (max-width: 768px) {
 }
 /* de 720 para abajo */
-@media only screen and (max-width: 720px){  
-    .hero{
-        display: none;
-    }
-} 
+@media only screen and (max-width: 720px) {
+  .hero {
+    display: none;
+  }
+}
