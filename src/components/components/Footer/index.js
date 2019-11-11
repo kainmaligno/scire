@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import map from "../../../images/gatsby-astronaut.png"
 import marker from "../../../images/mapa_pin.svg"
 import phone from "../../../images/icon_tel.svg"
 import mail from "../../../images/email.svg"
@@ -14,10 +13,11 @@ const Footer = () => (
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.9954978466338!2d-98.2651678!3d19.0205152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc79e11261859%3A0xae0be8a01f34c4eb!2sTorres%20M%C3%A9dicas%20Angel%C3%B3polis!5e0!3m2!1ses-419!2smx!4v1573449728785!5m2!1ses-419!2smx"
             width="200"
             height="200"
-            allowfullscreen
+            allowfullscreen="true"
+            title="map"
           ></iframe>
           <div>
-            <img src={marker} width="30px" />
+            <img src={marker} width="30px" alt="icon_marker" />
             <p>
               Torres Médicas Angelópolis Periférico Ecológico 3507, <br />
               Reserva Territorial Atlixcáyotl, 72830,
@@ -29,8 +29,8 @@ const Footer = () => (
           <p>CONTÁCTANOS:</p>
           <div>
             <ContactImages>
-              <img src={phone} />
-              <img src={mail} />
+              <img src={phone} alt="icon_phone" />
+              <img src={mail} alt="icon_mail" />
             </ContactImages>
             <Contact>
               <ul>

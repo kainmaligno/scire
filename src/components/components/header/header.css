@@ -35,8 +35,6 @@
   width: 483px;
 }
 
-.innerTitle-container {
-}
 .innerTitle {
   color: #16a1b2;
   font-family: "Gotham Condensed";
@@ -46,8 +44,19 @@
   margin-bottom: 20px;
 }
 
-.inneText-container {
+@media (max-width: 720px) {
+  .infoContainer {
+    margin-left: 10%;
+    width: 80vw;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  .innerTitle {
+    font-size: 32px;
+  }
 }
+
 .innerText {
   color: #6d6d6d;
   font-family: "Walkway SemiBold";
@@ -62,18 +71,5 @@
     height: 63vh;
     overflow: hidden;
     position: relative;
-  }
-  /* .hero img{
-    height: 80px;
-
-   } */
-}
-
-@media only screen and (max-width: 768px) {
-}
-/* de 720 para abajo */
-@media only screen and (max-width: 720px) {
-  .hero {
-    display: none;
   }
 }

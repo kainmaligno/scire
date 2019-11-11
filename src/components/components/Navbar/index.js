@@ -67,6 +67,7 @@ const MenuContainer = styled.div`
   display: none;
   margin: 30px;
   padding-top: 40px;
+  text-align: right;
   @media (max-width: 900px) {
     display: block;
   }
@@ -86,7 +87,7 @@ const MenuContent = styled.div`
 `
 const UnorderList = styled.ul`
   margin-top: 50px;
-  width: 65%;
+  width: 60%;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -118,24 +119,35 @@ const UnorderList = styled.ul`
       #ffff no-repeat;
     background-size: 100% 5px;
   }
+  .activeBtn > button {
+    background-color: #16a1b2;
+    span   {
+      color: white;
+    }
+  }
 `
 const Navbar = () => (
   <NavWrapper>
     <NavContainer>
       <NavSocialContainer>
         <NavSocialWrapper>
-          <a href="https://www.facebook.com/CENNSCIRE/" target="_blank">
-            <img src={FaceIcon} alt="face_icon" />
+          <a
+            href="https://www.facebook.com/CENNSCIRE/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={FaceIcon} alt="icon_face" />
           </a>
           <a
             href="https://www.instagram.com/scire_inteligencia_medica/"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <img src={InstaIcon} alt="insta_icon" />  
+            <img src={InstaIcon} alt="icon_insta" />
           </a>
         </NavSocialWrapper>
         <NavContactWrapper>
-          <img src={CallIcon} />
+          <img src={CallIcon} alt="icon_phone" />
           <span>22 21 69 18 02</span>
         </NavContactWrapper>
       </NavSocialContainer>
@@ -169,7 +181,11 @@ const Navbar = () => (
             >
               <li>PREGUNTA AL EXPERTO</li>
             </Link>
-            <Link style={{ textDecorationLine: "none" }}>
+            <Link
+              to="/agendar"
+              style={{ textDecorationLine: "none" }}
+              activeClassName="activeBtn"
+            >
               <Button>
                 <span>AGENDA Y COTIZA</span>
               </Button>
@@ -214,7 +230,7 @@ const Navbar = () => (
           <li>PREGUNTA AL EXPERTO</li>
         </Link>
         <hr />
-        <Link style={{ textDecorationLine: "none" }}>
+        <Link to="/agendar" style={{ textDecorationLine: "none" }}>
           <Button>
             <span>AGENDA Y COTIZA</span>
           </Button>
