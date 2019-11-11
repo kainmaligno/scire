@@ -16,11 +16,12 @@ const Doctor = ( props ) => {
                 <Name>{ name }</Name>
                 <PF>{ titleDoctor }</PF>
                 <PF>{ cedula }</PF>
-                {
+                <p>info</p>
+                {/* {
                     info.map( phar => {
                         return <p>{ phar }</p>
                     })
-                }
+                } */}
             </Info>
             <SideBarDoctor
                 logos = { logos }

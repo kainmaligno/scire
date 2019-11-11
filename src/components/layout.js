@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React,{useEffect} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import NavBar from './components/Navbar'
@@ -17,14 +17,16 @@ import styled from 'styled-components'
 import UIkit from "uikit"
 import icons from "uikit/dist/js/uikit-icons"
 import "uikit/dist/css/uikit.min.css"
-UIkit.use(icons)
+//UIkit.use(icons)
 
 const Lay = styled.div`
   position: relative;
 `;
 
 const Layout = ({ children, props }) => {
-  
+  useEffect(()=>{
+    UIkit.use(icons)
+  })
   const data = useStaticQuery(graphql`
     query {
        title:site {

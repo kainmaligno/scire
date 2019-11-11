@@ -9,11 +9,11 @@ const SideBarDoctor = ( props ) => {
         <Side>  
             <ButtonDoctoralia />
             <Images>
-                {
+                {/* {
                     logos.map( logo => {
                         return  <Img src = { logo } />
                     })
-                }
+                } */}
             </Images>
         </Side>
     )

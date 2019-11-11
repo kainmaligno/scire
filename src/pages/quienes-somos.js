@@ -18,16 +18,7 @@ const data = [
       "La Dra. Mellado ha encontrado en la epilepsia un interés particular, debido a esto y a la Neurofisiología realizó estudios de posgrado y estancia de 6 meses en el centro de Epilepsia de la Cleveland Clinic en Estados Unidos, esto la ha llevado a atender varios pacientes con este padecimiento tanto en hospitales privados como públicos.",
       "Su capacidad de líderazgo y emprendimiento la han llevado a fundar SCIRÉ Inteligencia Médica, empresa mexicana de servicios de salud, especializada en estudios de diagnóstigo neurofisiologico y neurología."]
   },
-  {
-    name: "Dra. Areli Rosario Suárez Román",
-    titile: "Neurofisiólogo, Especialista en rehabilitación y medicina física",
-    celula: "No. dde cédula: 6976825",
-    src: "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/articulos/perfil-resilencia.jpg",
-    info: [
-      "hola",
-      "ddos"
-    ]
-  }
+  
 ]
 
 const dat = ['a','b','c'];
