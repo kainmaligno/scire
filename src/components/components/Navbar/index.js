@@ -130,7 +130,8 @@ const Navbar = () => (
             <Link to="/nosotros" style={{ textDecorationLine: "none" }}>
               <li>QUIENES SOMOS</li>
             </Link>
-            <li>PREGUNTA AL EXPERTO</li>
+            
+            <Link to="/preguntasfrecuentes" style={{ textDecorationLine: "none" }}> <li>PREGUNTA AL EXPERTO</li> </Link> 
             <Button>
               <span>AGENDA Y COTIZA</span>
             </Button>
