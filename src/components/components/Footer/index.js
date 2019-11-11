@@ -10,7 +10,12 @@ const Footer = () => (
     <FooterHeader>
       <FooterContainer>
         <Marker>
-          <img src={map} width="200px" height="200px" />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.9954978466338!2d-98.2651678!3d19.0205152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc79e11261859%3A0xae0be8a01f34c4eb!2sTorres%20M%C3%A9dicas%20Angel%C3%B3polis!5e0!3m2!1ses-419!2smx!4v1573449728785!5m2!1ses-419!2smx"
+            width="200"
+            height="200"
+            allowfullscreen
+          ></iframe>
           <div>
             <img src={marker} width="30px" />
             <p>
@@ -31,7 +36,7 @@ const Footer = () => (
               <ul>
                 <li>22 21691 802 </li>
                 <li>22 2715 3842 </li>
-                <li>.</li>
+                <li className="space">.</li>
                 <li>contacto@scire.com.mx</li>
               </ul>
             </Contact>
@@ -44,7 +49,7 @@ const Footer = () => (
       </Info>
     </FooterHeader>
     <FooterBottom>
-      SCIRE ® Todos los derechos reservados. Desarrollado por Spartan Dev.
+      SCIRE ® Todos los derechos reservados. Desarrollado por Spartans Dev.
     </FooterBottom>
   </div>
 )
@@ -96,11 +101,11 @@ const Marker = styled.div`
   flex-wrap: wrap;
   div {
     margin-top: 20px;
-    //margin-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     p {
+      line-height: 22px;
       color: #ae9caa;
       font-family: "Walkway SemiBold";
       font-size: 20px;
@@ -110,11 +115,12 @@ const Marker = styled.div`
 const ContactContainer = styled.div`
   margin: 10px 0;
   padding-right: 10%;
+  padding-top: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   p {
-    width: 90%;
+    width: 85%;
     text-align: center;
     color: #9b79c1;
     font-family: "Gotham Condensed";
@@ -131,10 +137,9 @@ const ContactContainer = styled.div`
 const ContactImages = styled.aside`
   display: flex;
   flex-direction: column;
-  align-items: center;
   img {
     width: 30px;
-    margin: 10px;
+    margin: 6px;
   }
 `
 const Contact = styled.aside`
@@ -146,6 +151,10 @@ const Contact = styled.aside`
   ul {
     list-style-type: none;
     padding: 0 40px;
+    line-height: 18px;
+    .space {
+      font-size: 1px;
+    }
   }
 `
 const Info = styled.div`
