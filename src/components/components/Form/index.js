@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Subtitle,Space,Section,P,Btn,Action } from "./styles";
 import Input               from './Input';
 import Bullets             from './Bullets';
 import Calendar            from './Calendar';
@@ -63,30 +64,39 @@ const Form = () => {
 
 
     return(
-        <div>
-            <Input 
-                action   = { Name }
-                label    = { "Nombre" }
-                required = { true }
-                value    = { name }
-            />
-            <Input 
-                action   = { Edad }
-                label    = { "Edad" }
-                required = { true }
-                value    = { edad }
-            />
-            <Input 
-                action   = { Celular }
-                label    = { "Teléfono celular" }
-                required = { true }
-                value    = { celular }
-            />
-            <Input 
-                action   = { Fijo }
-                label    = { "Teléfono fijo" }
-                value    = { fijo }
-            />
+        <Space>
+            <Subtitle>Deja tus datos y nosotros nos ponemos en contacto</Subtitle>
+            <Section>
+                <Input 
+                    action   = { Name }
+                    label    = { "Nombre" }
+                    required = { true }
+                    value    = { name }
+                    width    = { "60%" }
+                />
+                <Input 
+                    action   = { Edad }
+                    label    = { "Edad" }
+                    required = { true }
+                    value    = { edad }
+                    width    = { "35%" }
+                />
+            </Section>
+            <Section>
+                <Input 
+                    action   = { Celular }
+                    label    = { "Teléfono celular" }
+                    required = { true }
+                    value    = { celular }
+                    width    = { "48%" }
+                />
+                <Input 
+                    action   = { Fijo }
+                    label    = { "Teléfono fijo" }
+                    value    = { fijo }
+                    width    = { "48%" }
+                />
+            </Section>
             <Bullets 
                 actions  = { { Si, No } }
                 text     = { "¿Eres tú el paciente?" } 
@@ -95,18 +105,20 @@ const Form = () => {
                 values   = { { si, no } }
             />
             {
-             no ? <div> 
+             no ? <Section> 
                     <Input 
                         action   = { NamePaciente }
                         label    = { "Nombre del paciente" }
                         required = { true }
+                        width    = { "60%" }
                     />
                     <Input 
                         action   = { EdadPaciente }
                         label    = { "Edad del paciente" } 
                         required = { true }
+                        width    = { "35%" }
                     />
-                  </div> : null   
+                  </Section> : null   
             }
             <Bullets 
                 actions  = { { Consulta, Estudio } }
@@ -114,7 +126,7 @@ const Form = () => {
                 textBOne = { "Consulta" } 
                 textBTwo = { "Estudio" }
                 values   = { { consulta, estudio } }
-            />)
+            />
             {
                 estudio ? <div>
                     Elije el estudio que deseas
@@ -123,7 +135,11 @@ const Form = () => {
             }
             
             <Calendar today = { "2019-11-07" } maxDay = { "2020-01-07"}/>
-        </div>
+            <P>Las fechas de consulta son sugeridas y están condicionadas a la agenda de nuestros médicos. Nos comunicaremos contigo para confirmar la disponibilidad.</P>
+            <Action>
+                <Btn>Enviar</Btn>
+            </Action>
+        </Space>
     )
 }
 

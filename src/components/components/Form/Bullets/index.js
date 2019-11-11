@@ -1,7 +1,7 @@
 import React         from "react";
 import InputCheckbox from '../InputCheckbox';
-import { Space }     from './styles';
-import { npost } from "q";
+import { Space, Inputs,Span } from './styles';
+
 
 const Bullets = ( props ) => {
     let { text, textBOne, textBTwo, actions, values } = props;
@@ -9,17 +9,19 @@ const Bullets = ( props ) => {
     let { si, no, consulta, estudio  } = values;
     return(
         <Space>
-            <span>{ text }<sup>*</sup></span>
-            <InputCheckbox 
-                action = { Si ? Si : Consulta }
-                text   = { textBOne }
-                value  = { si ? si : consulta }
-            />
-            <InputCheckbox 
-                action = { No ? No : Estudio }
-                text   = { textBTwo }
-                value  = { no ? no : estudio }
-            />
+            <Span>{ text }<sup>*</sup></Span>
+            <Inputs>
+                <InputCheckbox 
+                    action = { Si ? Si : Consulta }
+                    text   = { textBOne }
+                    value  = { si ? si : consulta }
+                />
+                <InputCheckbox 
+                    action = { No ? No : Estudio }
+                    text   = { textBTwo }
+                    value  = { no ? no : estudio }
+                />
+            </Inputs>
         </Space>
     )
 }
