@@ -1,17 +1,17 @@
-import React from 'react';
+import React     from 'react';
+import { Space,Span } from "./styles";
 
 const InputCheckbox = ( props ) => {
-    let { text, action, value } = props;
+    let { text, action, value, firstWid } = props;
     
     function setChange( e ){
-        console.log( 'cambio' );
         action( e.target.value );
     }
     return(
-        <div>
+        <Space>
             <input type="checkbox" onChange = { setChange } checked = { value }/>
-            <span>{ text }</span>
-        </div>
+            <Span firstWid = { firstWid }>{ text }</Span>
+        </Space>
     )
 }
 

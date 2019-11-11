@@ -1,14 +1,19 @@
 import React from 'react';
+import { Space,Calen,Span } from './styles';
 
 const Calendar = ( props ) => {
     let { today, maxDay } = props;
     return(
-        <div>
-            <span>Fecha<sup>*</sup></span>
-            <input type = "date" min = { today } max={ maxDay } value = { today }/>
-            <span>Segunda opción de fecha<sup>*</sup></span>
-            <input type = "date" min = { today } max={ maxDay } value = { today }/>
-        </div>
+        <Space>
+            <Calen>
+                <Span>Fecha<sup>*</sup></Span>
+                <input type = "date" min = { today } max={ maxDay } value = { today }/>
+            </Calen>
+            <Calen>
+                <Span>Segunda opción de fecha<sup>*</sup></Span>
+                <input type = "date" min = { today } max={ maxDay } value = { today }/>
+            </Calen>
+        </Space>
     )
 }
 

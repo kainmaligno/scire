@@ -6,16 +6,16 @@ export const Space = styled.div`
     display        : flex;
     justify-content: flex-start;
     flex-direction : row;
-    margin         : 15px 0px;
+    margin         : 0px 0px 10px 0px;
     width          : 100%;
 `
 
 export const Inputs = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    align-items    : flex-end;
+    display        : flex;
+    flex-direction : row;
     justify-content: space-around:
-    width: 40%;
+    width          : 50%;
 `
 
 export const Span = styled.span`

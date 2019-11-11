@@ -5,6 +5,7 @@ export const InputSpace = styled.div`
     display        : flex;
     flex-direction : column;
     justify-content: flex-start;
+    margin         : 10px 0px;
     width          : ${ props => props.width || "100%"}
 `
 

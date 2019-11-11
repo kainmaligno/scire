@@ -3,6 +3,7 @@ import { Subtitle,Space,Section,P,Btn,Action } from "./styles";
 import Input               from './Input';
 import Bullets             from './Bullets';
 import Calendar            from './Calendar';
+import Estudios            from './Estudios';
 
 const Form = () => {
     const [ name   , setName    ] = useState('');
@@ -103,6 +104,7 @@ const Form = () => {
                 textBOne = { "Si" } 
                 textBTwo = { "No" }
                 values   = { { si, no } }
+                firstWid = { "100px" }
             />
             {
              no ? <Section> 
@@ -126,11 +128,10 @@ const Form = () => {
                 textBOne = { "Consulta" } 
                 textBTwo = { "Estudio" }
                 values   = { { consulta, estudio } }
+                firstWid = { "100px" }
             />
             {
-                estudio ? <div>
-                    Elije el estudio que deseas
-                </div>
+                estudio ? <Estudios />
                 : null
             }
             
