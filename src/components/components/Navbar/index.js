@@ -131,7 +131,7 @@ const Navbar = () => (
             href="https://www.instagram.com/scire_inteligencia_medica/"
             target="_blank"
           >
-            <img src={InstaIcon} alt="insta_icon" />
+            <img src={InstaIcon} alt="insta_icon" />  
           </a>
         </NavSocialWrapper>
         <NavContactWrapper>

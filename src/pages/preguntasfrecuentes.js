@@ -11,7 +11,6 @@ const TitleHeader = styled.p`
   font-weight: 300;
   line-height: 41px;
   text-align: center;
-  width: 100vw;
     text-align: center;
 `
 
