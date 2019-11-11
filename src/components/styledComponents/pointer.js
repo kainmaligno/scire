@@ -10,7 +10,7 @@ const Pointer = styled.p`
     line-height: 17px;
     margin:3em;
     margin-left:8em;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
 `
 
 export default Pointer;
