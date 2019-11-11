@@ -2,15 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Button from "../styledComponents/HeaderButton"
 import { Link } from 'gatsby'
-import electro from '../../images/estudios/ELECTROENCEFALOGRAMA.svg'
-import mio from '../../images/estudios/ELECTROMIOGRAFÍA.svg'
-import nerv from '../../images/estudios/VELOCIDADES DE CONDUCCIÓN NERVIOSA.svg'
-import oi from '../../images/estudios/POTENCIALES EVOCADOS.svg'
-import tami from '../../images/estudios/TAMIZ NEONATAL.svg'
-import pol from '../../images/estudios/POLISOMNOGRAFÍA (ESTUDIOS DEL SUEÑO).svg'
-import fib from '../../images/estudios/FIBRA ÚNICA.svg'
-import sisNerv from '../../images/estudios/SISTEMA NERVIOSO AUTÓNOMO.svg'
-import moni from '../../images/estudios/MONITOREO INTRAOPERATORIO.svg'  
+
 const CardStudio = styled.div`
   height: 200px;
   width: 325px;
@@ -59,106 +51,6 @@ const StudiesCard = ({title,slug,image }) => {
       </Link>  
     </div>
   </CardStudio>
-  
-    {/* <CardStudio>
-    <CardInfo>
-      <img src={electro} alt="studios" />
-      <span>ELECTROENCEFALOGRAMA</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio>
-  <CardStudio>
-    <CardInfo>
-      <img src={mio} alt="studios" />
-      <span>ELECTROMIOGRAFÍA</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio>
-  <CardStudio>
-    <CardInfo>
-      <img src={nerv} alt="studios" />
-      <span>VELOCIDADES DE CONDUCCIÓN NERVIOSA</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio>
-  <CardStudio>
-    <CardInfo>
-      <img src={oi} alt="studios" />
-      <span>POTENCIALES EVOCADOS</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio>
-  <CardStudio>
-    <CardInfo>
-      <img src={tami} alt="studios" />
-      <span>TAMIZ NEONATAL</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio>
-  <CardStudio>
-    <CardInfo>
-      <img src={pol} alt="studios" />
-      <span>POLISOMNOGRAFÍA (ESTUDIOS DEL SUEÑO)</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio>
-  <CardStudio>
-    <CardInfo>
-      <img src={fib} alt="studios" />
-      <span>FIBRA ÚNICA</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio>
-  <CardStudio>
-    <CardInfo>
-      <img src={sisNerv} alt="studios" />
-      <span>SISTEMA NERVIOSO AUTÓNOMO</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio>
-  <CardStudio>
-    <CardInfo>
-      <img src={moni} alt="studios" />
-      <span>MONITOREO INTRAOPERATORIO</span>
-    </CardInfo>
-    <div>
-      <Button>
-        <span>VER DETALLES</span>
-      </Button>
-    </div>
-  </CardStudio> */}
   </>
   )
 }

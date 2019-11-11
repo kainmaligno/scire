@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import Header from "../components/components/header"
 import Pointer from "../components/styledComponents/pointer"
 import StudiesCard from '../components/styledComponents/StudiesCard'
-import infoData from '../components/styledComponents/Solocards'
 
 const ArticleTitle = styled.div`
   display: flex;

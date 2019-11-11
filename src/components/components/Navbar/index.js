@@ -131,7 +131,7 @@ const Navbar = () => (
             href="https://www.instagram.com/scire_inteligencia_medica/"
             target="_blank"
           >
-            <img src={InstaIcon} alt="insta_icon" />
+            <img src={InstaIcon} alt="insta_icon" />  
           </a>
         </NavSocialWrapper>
         <NavContactWrapper>
@@ -175,9 +175,9 @@ const Navbar = () => (
               </Button>
             </Link>
           </UnorderList>
-          <MenuContainer class="uk-width-1-5">
-            <ul class="uk-nav-default " uk-nav="multiple: true">
-              <li class="uk-parent">
+          <MenuContainer className="uk-width-1-5">
+            <ul className="uk-nav-default " uk-nav="multiple: true">
+              <li className="uk-parent">
                 <a href="#" uk-toggle="target: #menu">
                   <span uk-icon="icon: menu; ratio: 2"></span>
                 </a>
@@ -188,7 +188,7 @@ const Navbar = () => (
       </div>
     </NavContainer>
     <MenuContent id="menu" hidden aria-hidden="true">
-      <ul class="uk-nav-sub">
+      <ul className="uk-nav-sub">
         <hr />
         <Link
           to="/servicios"
