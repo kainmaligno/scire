@@ -39,7 +39,7 @@ const NavContactWrapper = styled.div`
   justify-content: center;
   width: 200px;
   span {
-    margin-top: 14px;
+    margin-top: 20px;
     height: 16px;
     color: #72295e;
     font-size: 22px;
@@ -53,14 +53,20 @@ const NavListWrapper = styled.div`
 `
 const LogoContainer = styled.div`
   margin-top: 15%;
+  img {
+    width: 200px;
+  }
   @media (max-width: 900px) {
-    margin-top: 35%;
+    margin-top: 25%;
+    img {
+      width: 180px;
+    }
   }
 `
 const MenuContainer = styled.div`
   display: none;
   margin: 30px;
-  padding-top: 60px;
+  padding-top: 40px;
   @media (max-width: 900px) {
     display: block;
   }
@@ -137,7 +143,7 @@ const Navbar = () => (
         <NavListWrapper>
           <Link to="/" style={{ textDecorationLine: "none" }}>
             <LogoContainer>
-              <img src={Scire} alt="logo Scire" width="180px" />
+              <img src={Scire} alt="logo Scire" />
             </LogoContainer>
           </Link>
           <UnorderList>
@@ -145,6 +151,7 @@ const Navbar = () => (
               to="/servicios"
               style={{ textDecorationLine: "none" }}
               activeClassName="active"
+              partiallyActive={true}
             >
               <li>SERVICIOS</li>
             </Link>
