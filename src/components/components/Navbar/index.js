@@ -131,9 +131,11 @@ const Navbar = () => (
               <li>QUIENES SOMOS</li>
             </Link>
             <li>PREGUNTA AL EXPERTO</li>
-            <Button>
-              <span>AGENDA Y COTIZA</span>
-            </Button>
+            <Link to = "agendar">
+              <Button>
+                <span>AGENDA Y COTIZA</span>
+              </Button>
+            </Link>
           </UnorderList>
         </NavListWrapper>
       </NavListContainer>
