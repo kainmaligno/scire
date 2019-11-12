@@ -11,6 +11,9 @@ import "uikit/dist/css/uikit.min.css"
 
 const Lay = styled.div`
   position: relative;
+  @media(max-width:768px){
+  
+  }
 `;
 
 const Layout = ({ children, props }) => {
