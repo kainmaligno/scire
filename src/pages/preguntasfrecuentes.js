@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import Pointer from "../components/styledComponents/pointer"
+import FAQ from "../images/foto_preguntas.png"
+import FormFaq from '../components/styledComponents/FaqForm'
 const TitleHeader = styled.p`
   height: 41px;
   color: #16a1b2;
@@ -14,14 +16,57 @@ const TitleHeader = styled.p`
   text-align: center;
 `
 const FaqWrapper = styled.div`
-    padding: 0 2em 2em 8em;
-
+  padding: 0 2em 2em 8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
 `
 const FaqContainer = styled.div`
-    width: 50%;
-    height: auto;
-    box-sizing: border-box;
-    border: 1px solid rgba(176,176,176,0.5);
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  border: 1px solid rgba(176, 176, 176, 0.5);
+  
+  a{
+    color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 20px;	line-height: 17px;
+    background-color: transparent;
+    height: 38px;
+  }
+  a::before{
+  }
+  li{
+    padding: 1em;
+    border-bottom: 1px solid rgba(176, 176, 176, 0.5);
+  }
+  li:last-child{
+    border-bottom:none;
+  }
+  p{
+    color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 16px;	line-height: 20px;
+    text-align: justify;
+    padding:20px
+  }
+`
+
+const AccordionContainer = styled.div`
+  height: 77px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(176,176,176,0.1);
+    padding: 10px;
+
+`
+const FaqImageContainer = styled.div`
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `
 const Preguntas = () => {
   return (
@@ -38,49 +83,94 @@ const Preguntas = () => {
 
       <FaqWrapper>
         <FaqContainer>
-          <ul uk-accordion="collapsible: false">
+          <ul uk-accordion="collapsible:true">
             <li>
               <a className="uk-accordion-title" href="#">
-                Item 1
+                ¿Qué incluye la consulta de Neurología?
               </a>
-              <div className="uk-accordion-content">
+              <AccordionContainer className="uk-accordion-content">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Incluye la valoración médica, revisión de estudios previos (si
+                  cuenta con ellos), prescripción de tratamiento y solicitud de
+                  estudios si se considera necesario.
                 </p>
-              </div>
+              </AccordionContainer>
             </li>
             <li className="uk-open">
               <a className="uk-accordion-title" href="#">
-                Item 2
+                ¿Cuánto tiempo dura el estudio de electroencefalograma?
               </a>
-              <div className="uk-accordion-content">
-                <p>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor reprehenderit.
-                </p>
-              </div>
+              <AccordionContainer className="uk-accordion-content">
+                <p>Tiene una duración de una hora aproximadamente.</p>
+              </AccordionContainer>
             </li>
             <li>
               <a className="uk-accordion-title" href="#">
-                Item 3
+                ¿Por qué es necesario el desvelo para realizar el
+                electroencefalograma?
               </a>
-              <div className="uk-accordion-content">
+              <AccordionContainer className="uk-accordion-content">
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat proident.
+                  Existen algunas anormalidades que únicamente se observan en
+                  esa etapa. Que el paciente duerma durante el estudio de
+                  electroencefalograma nos permite revisar también la actividad
+                  cerebral durante el sueño proporcionando mayor información
+                  para su diagnóstico.
                 </p>
-              </div>
+              </AccordionContainer>
+            </li>
+            <li>
+              <a className="uk-accordion-title" href="#">
+                Tengo programado un estudio (electroencefalograma,
+                electromiografía) ¿Requiero ayuno?
+              </a>
+              <AccordionContainer className="uk-accordion-content">
+                <p>
+                  No, puede realizar sus comidas de forma normal. Para conocer
+                  las indicaciones y recomendaciones, visita el detalle de cada
+                  estudio en nuestra sección SERVICIOS.
+                </p>
+              </AccordionContainer>
+            </li>
+            <li>
+              <a className="uk-accordion-title" href="#">
+                Tengo programado un electroencefalograma ¿Debo suspender mis
+                medicamentos?
+              </a>
+              <AccordionContainer className="uk-accordion-content">
+                <p>
+                  No, los medicamentos deben de continuar con las dosis y
+                  horarios establecidos.
+                </p>
+              </AccordionContainer>
+            </li>
+            <li>
+              <a className="uk-accordion-title" href="#">
+                ¿Se pueden dar medicamentos para provocar sueño en los niños que
+                requieren estudios (electroencefalograma, potenciales evocados)?
+              </a>
+              <AccordionContainer className="uk-accordion-content">
+                <p>
+                  No. Los medicamentos que provocan sueño alteran los
+                  resultados de los estudios, por lo tanto es, muy importante
+                  desvelarlos para facilitar que duerman en el consultorio de
+                  forma natural.
+                </p>
+              </AccordionContainer>
             </li>
           </ul>
         </FaqContainer>
 
-        <div>
-          <img src="" alt="" />
-        </div>
+        <FaqImageContainer>
+          <img
+            src={FAQ}
+            alt="Preguntas frecuentes"
+            width="300px"
+            height="300px"
+          />
+        </FaqImageContainer>
       </FaqWrapper>
+      <FormFaq/>
     </Layout>
   )
 }

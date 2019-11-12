@@ -42,7 +42,7 @@ const StudiesCard = ({ title, slug, image }) => {
           <span>{title}</span>
         </CardInfo>
         <div>
-          <Link to={`servicios_estudios/${slug}`} style={{ textDecorationLine: "none" }}>
+          <Link to={`/servicios_estudios/${slug}`} style={{ textDecorationLine: "none" }}>
             <Button>
               <span>VER DETALLES</span>
             </Button>

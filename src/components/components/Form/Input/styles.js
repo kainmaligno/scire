@@ -6,7 +6,7 @@ export const InputSpace = styled.div`
     flex-direction : column;
     justify-content: flex-start;
     margin         : 10px 0px;
-    width          : ${ props => props.width || "100%"}
+    width          : ${ props => props.width || "100%"};
 `
 
 export const InputElem = styled.input`
@@ -19,5 +19,5 @@ export const InputElem = styled.input`
 
 export const Span = styled.span`
     color    : #313131;
-    font-size: 14px;
+    font-size: 18px;
 `
