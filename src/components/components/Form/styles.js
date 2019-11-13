@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Space = styled.div`
-    margin-left: 20%;
-    width      : 60%;
+    margin-left     : 20%;
+    width           : 60%;
 `
 
 export const Subtitle = styled.div`
@@ -17,6 +17,9 @@ export const Section = styled.div`
     justify-content: space-between;
     flex-direction : row;
     width          : 100%;
+    @media ( max-width: 700px ){
+        flex-direction: column;
+    }
 `
 
 
