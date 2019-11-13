@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Subtitle,Space,Section,P,Btn,Action } from "./styles";
 import Input               from './Input';
+import Doctoralia          from './Doctoralia';
 import Bullets             from './Bullets';
 import Calendar            from './Calendar';
 import Estudios            from './Estudios';
@@ -67,6 +68,7 @@ const Form = () => {
     return(
         <Space>
             <Subtitle>Deja tus datos y nosotros nos ponemos en contacto</Subtitle>
+            <Doctoralia />
             <Section>
                 <Input 
                     action   = { Name }
@@ -135,7 +137,7 @@ const Form = () => {
                 : null
             }
             
-            <Calendar today = { "2019-11-07" } maxDay = { "2020-01-07"}/>
+            <Calendar today = { "2019-11-13" } maxDay = { "2020-01-13"}/>
             <P>Las fechas de consulta son sugeridas y están condicionadas a la agenda de nuestros médicos. Nos comunicaremos contigo para confirmar la disponibilidad.</P>
             <Action>
                 <Btn>Enviar</Btn>

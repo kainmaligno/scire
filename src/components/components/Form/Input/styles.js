@@ -7,6 +7,9 @@ export const InputSpace = styled.div`
     justify-content: flex-start;
     margin         : 10px 0px;
     width          : ${ props => props.width || "100%"};
+    @media ( max-width: 700px ){
+        width: 100%;
+    }
 `
 
 export const InputElem = styled.input`
