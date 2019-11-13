@@ -10,6 +10,9 @@ const Pointer = styled.p`
   margin: 3em;
   margin-left: 4em;
   text-transform: lowercase;
+  @media(max-width:768px){
+    width:80%;
+  }
 `
 
 export default Pointer

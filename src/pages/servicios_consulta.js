@@ -37,7 +37,7 @@ const ServiciosConsulta = () => {
 
   return (
     <Layout>
-      <SEO title="Servicios | Consulta" />
+      <SEO title="Consulta" />
       <Header image={data.header} title={title} body={body} btnInfo={btnInfo} />
       <Pointer>{pointer}</Pointer>
       <article className="article-container">

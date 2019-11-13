@@ -22,6 +22,14 @@ const FaqWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   position:relative;
+  @media (max-width:769px){
+    padding: 2em 5em 2em 2em;
+  }
+  @media(max-width:375px){
+    flex-direction:column;
+    padding: 2em 2em 2em 2em;
+
+  }
 `
 const FaqContainer = styled.div`
   width: 50%;
@@ -33,12 +41,18 @@ const FaqContainer = styled.div`
     color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 20px;	line-height: 17px;
     background-color: transparent;
     height: 38px;
+    @media(max-width:375px){
+      height:100px;
+    }
   }
   a::before{
   }
   li{
     padding: 1em;
     border-bottom: 1px solid rgba(176, 176, 176, 0.5);
+    /* @media(max-width:375px){
+      height:100px;
+    } */
   }
   li:last-child{
     border-bottom:none;
@@ -47,6 +61,10 @@ const FaqContainer = styled.div`
     color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 16px;	line-height: 20px;
     text-align: justify;
     padding:20px
+  }
+
+  @media(max-width:769px){
+    width:90%
   }
 `
 
@@ -58,7 +76,10 @@ const AccordionContainer = styled.div`
     align-items: center;
     background-color: rgba(176,176,176,0.1);
     padding: 10px;
-
+  @media(max-width:375px){
+    margin-top: 20px;
+    height: 288px;
+  }
 `
 const FaqImageContainer = styled.div`
   width: 50%;
@@ -67,6 +88,9 @@ const FaqImageContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media(max-width:769px){
+    margin-left:1em;
+  }
 `
 const Preguntas = () => {
   return (

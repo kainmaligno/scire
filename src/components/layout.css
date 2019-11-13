@@ -271,6 +271,13 @@ body {
   .services-back1:before {
     margin-left: 80px;
   }
+
+  .faq-title-dudas:before{
+    width: 45%;
+  }
+  .faq-title-resueltas:before{
+    width:60%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -314,6 +321,14 @@ body {
     margin-top: -12%;
   }
 }
+@media(max-width:768px){
+  .faq-title-dudas:before{
+    width: 45%;
+  }
+  .faq-title-resueltas:before{
+    width:60%;
+  }
+}
 
 @media (max-width: 600px) {
   .services-back2:before {
@@ -342,5 +357,15 @@ body {
   }
   .text-container {
     height: 28vh;
+  }
+  .faq-title-dudas:before{
+    width: 90%;
+    font-size: 49px;
+
+  }
+  .faq-title-resueltas:before{
+    width:86%;
+    font-size: 49px;
+
   }
 }
