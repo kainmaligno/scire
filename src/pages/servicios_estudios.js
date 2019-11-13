@@ -21,7 +21,7 @@ const ArticleTitle = styled.div`
     line-height: 25px;
     text-align: center;
     @media (max-width: 500px) {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 `
