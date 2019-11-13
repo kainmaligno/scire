@@ -18,6 +18,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            url
             author
           }
         }
@@ -32,8 +33,8 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={`${site.siteMetadata.title} | ${title}`}
+      titleTemplate={`${site.siteMetadata.title} | ${title}`}
       meta={[
         {
           name: `description`,
@@ -44,8 +45,16 @@ function SEO({ description, lang, meta, title }) {
           content: title,
         },
         {
+          property: `og:image`,
+          content:"https://res.cloudinary.com/drakarzamael/image/upload/v1573178919/estudiosBlog/ELECTROENCEFALOGRAMA_open.svg"
+        },
+        {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content:site.siteMetadata.url,
         },
         {
           property: `og:type`,

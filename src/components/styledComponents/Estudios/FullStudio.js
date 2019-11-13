@@ -5,6 +5,7 @@ import Layout from "../../layout"
 import Pointer from "../pointer"
 import Button from "../Button"
 import Slider from "../../components/Slider/slider"
+import SEO from '../../seo'
 
 const Header = styled.p`
   height: 41px;
@@ -134,6 +135,7 @@ export const query = graphql`
 const FullStudio = props => {
   return (
     <Layout>
+      <SEO title={props.data.markdownRemark.frontmatter.title}/>
       <Pointer>{`servicios/estudios/${props.data.markdownRemark.fields.slug}`}</Pointer>
       <Container>
         <PostContainer>
