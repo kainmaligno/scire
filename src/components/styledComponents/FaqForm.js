@@ -90,9 +90,14 @@ return (
   <FormContainer>
     <FormWrapper>
       <Title text="Manda tus dudas, las responderemos vía correo electrónico. Deja tu contacto." />
-      <FormInputContainer>
+      <FormInputContainer method="POST"  name="contact-form" action="/gracias" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="contact" value="contact" />
         <SimpleContainer>
-          <Input
+            <input type="text" name="nombre"/>
+            <input type="email" name="email"/>
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+          {/* <Input
             action={Name}
             label={"Nombre"}
             required={true}
@@ -105,7 +110,7 @@ return (
             required={true}
             value={email}
             width={"40%"}
-          />
+          /> */}
         </SimpleContainer>
         <TextContainer>
             <span>Escribe tu duda o mensaje</span>

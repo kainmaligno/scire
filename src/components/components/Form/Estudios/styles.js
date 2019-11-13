@@ -12,11 +12,16 @@ export const Span = styled.span`
     color    : #72295E;
     cursor   : pointer;
     font-size: 14px;
+    @media ( max-width: 900px ){
+       margin: 10px 0px;
+    }
 `
 
 export const Select = styled.select`
-    padding: 15px 0px;
     width  : 60%;
+    @media ( max-width: 700px ){
+        width: 100%;
+    }
 `
 
 export const SelectSpace = styled.div`
@@ -25,7 +30,10 @@ export const SelectSpace = styled.div`
     flex-direction : row;
     justify-content: space-between;
     margin-top     : 5px;
-    `
+    @media ( max-width: 900px ){
+        flex-direction: column;
+    }
+`
 export const EstudiosSpace = styled.div`
     display        : flex;
     flex-direction : column;
@@ -35,4 +43,7 @@ export const EstudiosSpace = styled.div`
 
 export const Title = styled.span`
     margin-bottom: 5px;
+`
+export const TextArea = styled.textarea`
+    height: 100px;
 `

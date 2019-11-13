@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Scire`,
-    url:`www.salemmthedeveloper.com`,
+    title: `Scire empresa mexicana de servicios de salud`,
+    url:`"https://peaceful-sinoussi-e5a1a5.netlify.com"`,
     description: `Una empresa creada
     por seres humanos
     para el cuidado y la salud de

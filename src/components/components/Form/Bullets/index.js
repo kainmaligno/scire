@@ -2,7 +2,6 @@ import React         from "react";
 import InputCheckbox from '../InputCheckbox';
 import { Space, Inputs,Span } from './styles';
 
-
 const Bullets = ( props ) => {
     let { text, textBOne, textBTwo, actions, values, firstWid } = props;
     let { Si, No, Consulta, Estudio  } = actions;
