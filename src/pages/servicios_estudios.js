@@ -28,7 +28,7 @@ const ArticleTitle = styled.div`
 const GridContainer = styled.div`
   width: 96%;
   height: auto;
-  padding: 2em;
+  padding: 1em;
   margin-top: -6em;
   display: flex;
   flex-direction: column;

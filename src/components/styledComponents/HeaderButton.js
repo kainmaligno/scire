@@ -7,24 +7,51 @@ const HeaderButton = styled.button`
   width: 200px;
   border: 1px solid ${pallete.color.secondary.main};
   border-radius: 8px;
-  background-color: ${pallete.color.white.main};
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  background-color: ${pallete.color.secondary.main};
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   span {
     color: ${pallete.color.secondary.main};
     font-family: "Gotham Condensed";
     font-size: 24px;
     font-weight: 300;
     line-height: 19px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     text-transform: uppercase;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &: before {
+    border-radius: 7px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+  }
+
+  &: hover:before {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    span {
+    }
   }
 `
 export default HeaderButton
