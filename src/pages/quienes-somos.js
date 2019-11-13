@@ -30,7 +30,7 @@ const data = [
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="SCIRE" />
+    <SEO title="Acerca de Nosotros" />
     {data.map(doctor => {
       return (
         <Doctor

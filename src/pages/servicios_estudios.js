@@ -89,7 +89,7 @@ const ServiciosEstudios = () => {
   } = data.servicesDataJson.services_estudios
   return (
     <Layout>
-      <SEO title="Servicios | Estudios" />
+      <SEO title="Estudios" />
       <Header image={data.header} title={title} body={body} btnInfo={btnInfo} />
       <Pointer>{pointer}</Pointer>
       <article className="article-container">
