@@ -165,20 +165,22 @@ body {
 
 .post-ul li {
   height: 21px;
-  width: 590px;
+  width: 100%;
   color: #72295e;
   font-family: "Walkway SemiBold";
   font-size: 20px;
   line-height: 21px;
-  margin: 20px;
+  margin: 30px 10px;
+  list-style: none;
 }
 .post-ul li::before {
-  content: "\2022";
-  color: red;
-  font-weight: bold;
+  font-family: "Courier New";
+  font-size: 80px;
+  content: "\2024";
+  color: #16a1b2;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  width: 0.8em;
+  margin-left: -0.8em;
 }
 
 .post-ul span {
@@ -272,11 +274,11 @@ body {
     margin-left: 80px;
   }
 
-  .faq-title-dudas:before{
+  .faq-title-dudas:before {
     width: 45%;
   }
-  .faq-title-resueltas:before{
-    width:60%;
+  .faq-title-resueltas:before {
+    width: 60%;
   }
 }
 
@@ -321,12 +323,12 @@ body {
     margin-top: -12%;
   }
 }
-@media(max-width:768px){
-  .faq-title-dudas:before{
+@media (max-width: 768px) {
+  .faq-title-dudas:before {
     width: 45%;
   }
-  .faq-title-resueltas:before{
-    width:60%;
+  .faq-title-resueltas:before {
+    width: 60%;
   }
 }
 
@@ -334,6 +336,10 @@ body {
   .services-back2:before {
     margin-left: -100%;
     margin-top: -15%;
+  }
+  .post-ul li::before {
+    width: 0.4em;
+    margin-left: -0.4em;
   }
 }
 
@@ -352,20 +358,31 @@ body {
 
 @media (max-width: 450px) {
   .services-back2:before {
-    margin-left: -170%;
+    margin-left: -165%;
     margin-top: -18%;
   }
   .text-container {
-    height: 28vh;
+    height: 32vh;
   }
-  .faq-title-dudas:before{
+  .faq-title-dudas:before {
     width: 90%;
     font-size: 49px;
-
   }
-  .faq-title-resueltas:before{
-    width:86%;
+  .faq-title-resueltas:before {
+    width: 86%;
     font-size: 49px;
+  }
+  .services-image-container {
+    margin-top: 60px;
+  }
+}
 
+@media (max-width: 400px) {
+  .services-back2:before {
+    margin-left: -190%;
+    margin-top: -18%;
+  }
+  .services-title:before {
+    font-size: 60px;
   }
 }

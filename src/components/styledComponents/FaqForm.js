@@ -94,10 +94,10 @@ return (
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="contact" value="contact" />
         <SimpleContainer>
-            <input type="text" name="nombre"/>
+            {/* <input type="text" name="nombre"/>
             <input type="email" name="email"/>
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-          {/* <Input
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea> */}
+          <Input
             action={Name}
             label={"Nombre"}
             required={true}
@@ -110,12 +110,13 @@ return (
             required={true}
             value={email}
             width={"40%"}
-          /> */}
+          />
         </SimpleContainer>
         <TextContainer>
             <span>Escribe tu duda o mensaje</span>
           <TextArea name="mensaje" cols="30" row="10" width={"90%"}/>
         </TextContainer>
+
         <Button  type="button" uk-toggle="target:#modal-example"> <p>ENVIAR</p></Button>
         <div id="modal-example" uk-modal='true'>
           <div className="uk-modal-dialog uk-modal-body">
