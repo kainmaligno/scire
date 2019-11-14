@@ -146,7 +146,7 @@ body {
 .info {
   margin-top: -50px;
   height: 60px;
-  width: 45%;
+  width: 100%;
   color: #6d6d6d;
   font-family: "Walkway SemiBold";
   font-size: 22px;
@@ -302,16 +302,28 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.btn-send-contact:hover ::before{
+.btn-send-contact:hover ::before {
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
 }
 
-.modal-title{
-  height: 25px;	width: 520px;	color: #00999E;	font-family: "Walkway SemiBold";	font-size: 24px;	line-height: 25px;	text-align: center;
+.modal-title {
+  height: 25px;
+  width: 520px;
+  color: #00999e;
+  font-family: "Walkway SemiBold";
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
 }
-.modal-body{
-  height: 42px;	width: 520px;	color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 18px;	line-height: 20px;	text-align: center;
+.modal-body {
+  height: 42px;
+  width: 520px;
+  color: #6d6d6d;
+  font-family: "Walkway SemiBold";
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
 }
 @media (max-width: 1200px) {
   .services-back1:before {
@@ -332,6 +344,9 @@ body {
   }
   .faq-title-resueltas:before {
     width: 60%;
+  }
+  .info {
+    width: 90%;
   }
 }
 
@@ -368,7 +383,7 @@ body {
   }
   .info {
     text-align: center;
-    width: 70vw;
+    width: 65vw;
     position: relative;
   }
   .services-back2:before {

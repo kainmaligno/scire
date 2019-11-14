@@ -1,4 +1,4 @@
-import React,{useEffect} from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import NavBar from "./components/Navbar"
 import Footer from "./components/Footer"
@@ -11,27 +11,22 @@ import "uikit/dist/css/uikit.min.css"
 
 const Lay = styled.div`
   position: relative;
-  @media(max-width:768px){
-  
+  @media (max-width: 768px) {
   }
-`;
+`
 
 const Layout = ({ children, props }) => {
-  useEffect(()=>{
+  useEffect(() => {
     UIkit.use(icons)
-  })  
-
+  })
 
   return (
     <Lay>
       <NavBar />
-      <main>{children}</main>
+      <main style={{ paddingTop: "180px" }}>{children}</main>
       <Footer />
     </Lay>
   )
-
-
-
 }
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

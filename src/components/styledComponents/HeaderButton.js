@@ -17,15 +17,14 @@ const HeaderButton = styled.button`
   backface-visibility: hidden;
   color: ${pallete.color.secondary.main};
   &:hover {
-      color: #fff;
-    }
+    color: #fff;
+  }
   span {
     font-family: "Gotham Condensed";
     font-size: 24px;
     font-weight: 300;
     line-height: 19px;
     text-transform: uppercase;
-   
   }
   &:before {
     border-radius: 7px;
@@ -36,7 +35,7 @@ const HeaderButton = styled.button`
     bottom: 0;
     left: 0;
     right: 0;
-    background: white;
+    background: #ffffff;
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
     -webkit-transform-origin: 50%;
@@ -44,7 +43,7 @@ const HeaderButton = styled.button`
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transition: 300ms ease-out;
-    transition: 300ms ease-out; 
+    transition: 300ms ease-out;
   }
   &:hover:before {
     -webkit-transform: scaleY(0);

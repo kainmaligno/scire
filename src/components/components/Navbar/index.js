@@ -13,6 +13,9 @@ const NavWrapper = styled.div`
   justify-content: space-between;
   padding: 1.2% 4%;
   flex-direction: column;
+  position: fixed;
+  z-index: 3;
+  background-color: #ffffff;
 `
 const NavContainer = styled.div`
   width: 92vw;
@@ -116,7 +119,7 @@ const UnorderList = styled.ul`
     font-weight: bold;
     padding-bottom: 10px;
     background: linear-gradient(to right, #72295e 0%, #aa5397 100%) left bottom
-      #ffff no-repeat;
+      #ffffff no-repeat;
     background-size: 100% 5px;
   }
   .activeBtn > button {
