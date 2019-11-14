@@ -15,19 +15,19 @@ const HeaderButton = styled.button`
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  color: ${pallete.color.secondary.main};
+  &:hover {
+      color: #fff;
+    }
   span {
-    color: ${pallete.color.secondary.main};
     font-family: "Gotham Condensed";
     font-size: 24px;
     font-weight: 300;
     line-height: 19px;
     text-transform: uppercase;
-    &:hover {
-      color: #fff;
-    }
+   
   }
-
-  &: before {
+  &:before {
     border-radius: 7px;
     content: "";
     position: absolute;
@@ -44,10 +44,9 @@ const HeaderButton = styled.button`
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transition: 300ms ease-out;
-    transition: 300ms ease-out;
+    transition: 300ms ease-out; 
   }
-
-  &: hover:before {
+  &:hover:before {
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     span {

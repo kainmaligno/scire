@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Title from '../components/Title'
 import Input from '../components/Form/Input'
 import Button from '../styledComponents/Button'
+
 const FormContainer = styled.div`
      width: 100%;
     height: auto;
@@ -90,19 +91,18 @@ return (
   <FormContainer>
     <FormWrapper>
       <Title text="Manda tus dudas, las responderemos vía correo electrónico. Deja tu contacto." />
-      <FormInputContainer method="POST"  name="contact-form" action="/gracias" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="bot-field" />
-      <input type="hidden" name="contact" value="contact" />
+      <FormInputContainer action="https://formspree.io/xqkklngk" method="POST" name="contact-form">
+      <input type="hidden" name='_next' value='https://scire.com.mx/gracias' />
         <SimpleContainer>
-            <input type="text" name="nombre"/>
+            {/* <input type="text" name="nombre"/>
             <input type="email" name="email"/>
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-          {/* <Input
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea> */}
+          <Input
             action={Name}
             label={"Nombre"}
             required={true}
             value={name}
-            width={"40%"}
+            width={"40%"} 
           />
           <Input
             action={Email}
@@ -110,18 +110,20 @@ return (
             required={true}
             value={email}
             width={"40%"}
-          /> */}
+          />
         </SimpleContainer>
         <TextContainer>
             <span>Escribe tu duda o mensaje</span>
           <TextArea name="mensaje" cols="30" row="10" width={"90%"}/>
         </TextContainer>
-        <Button  type="button" uk-toggle="target:#modal-example"> <p>ENVIAR</p></Button>
-        <div id="modal-example" uk-modal='true'>
+
+        <button className="btn-send-contact" type="button" uk-toggle="target: #modal-close-default">ENVIAR</button>
+        {/* This is the modal with the default close button */}
+        <div id="modal-close-default" uk-modal='true'>
           <div className="uk-modal-dialog uk-modal-body">
-              <button className="uk-modal-close-outside" type="button" uk-close='true'></button>
-              <h2 className="uk-modal-title">Outside</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button className="uk-modal-close-default" type="button" uk-close='true' />
+            <h2 className="uk-modal-title modal-title">¡Hemos recibido tu mensaje!</h2>
+            <p className="modal-body">Te sugerimos estar al pendiente de tu correo electrónico, para recibir nuestra respuesta.</p>
           </div>
         </div>
       </FormInputContainer>
