@@ -97,7 +97,7 @@ const FaqForm = () => {
           <input
             type="hidden"
             name="_next"
-            value="https://scire.com.mx/gracias/"
+            //value="peaceful-sinoussi-e5a1a5.netlify.com/gracias/"
           />
           <SimpleContainer>
             <Input
@@ -106,6 +106,7 @@ const FaqForm = () => {
               required={true}
               value={name}
               width={"40%"}
+              name="name"
             />
             <Input
               action={Email}
@@ -113,6 +114,7 @@ const FaqForm = () => {
               required={true}
               value={email}
               width={"40%"}
+              name="email"
             />
           </SimpleContainer>
           <TextContainer>
@@ -122,7 +124,7 @@ const FaqForm = () => {
           <Link to='/gracias/'></Link>
           <button
             className="btn-send-contact"
-            type="button"
+            type=""
             uk-toggle="target: #modal-close-default"
           >
             ENVIAR
@@ -130,11 +132,11 @@ const FaqForm = () => {
           {/* This is the modal with the default close button */}
           <div id="modal-close-default" uk-modal="true">
             <div className="uk-modal-dialog uk-modal-body">
-              <button
+              {/* <button
                 className="uk-modal-close-default"
                 type="button"
                 uk-close="true"
-              />
+              /> */}
               <h2 className="uk-modal-title modal-title">
                 ¡Hemos recibido tu mensaje!
               </h2>
@@ -142,6 +144,7 @@ const FaqForm = () => {
                 Te sugerimos estar al pendiente de tu correo electrónico, para
                 recibir nuestra respuesta.
               </p>
+              <Link to="/gracias/">Continuar</Link>
             </div>
           </div>
         </FormInputContainer>
