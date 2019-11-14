@@ -120,9 +120,16 @@ const UnorderList = styled.ul`
     background-size: 100% 5px;
   }
   .activeBtn > button {
-    background-color: #16a1b2;
-    span   {
-      color: white;
+    background-color: #eef8f9;
+    border: 2px solid #16a1b2;
+    &: before {
+      border-radius: 7px;
+      content: none;
+    }
+    span {
+      &: hover {
+        color: #16a1b2;
+      }
     }
   }
 `
