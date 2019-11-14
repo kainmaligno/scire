@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import Title from "../components/Title"
 import Input from "../components/Form/Input"
-
+import {Link} from 'gatsby'
 const FormContainer = styled.div`
   width: 100%;
   height: auto;
@@ -78,13 +78,13 @@ const TextArea = styled.textarea`
 const FaqForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
-
   function Name(e) {
     setName(e.target.value)
   }
   function Email(e) {
     setEmail(e.target.value)
   }
+
   return (
     <FormContainer>
       <FormWrapper>
@@ -97,7 +97,7 @@ const FaqForm = () => {
           <input
             type="hidden"
             name="_next"
-            value="https://scire.com.mx/gracias"
+            value="https://scire.com.mx/gracias/"
           />
           <SimpleContainer>
             <Input
@@ -119,7 +119,7 @@ const FaqForm = () => {
             <span>Escribe tu duda o mensaje</span>
             <TextArea name="mensaje" cols="30" row="10" width={"90%"} />
           </TextContainer>
-
+          <Link to='/gracias/'></Link>
           <button
             className="btn-send-contact"
             type="button"

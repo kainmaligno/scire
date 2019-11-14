@@ -281,8 +281,8 @@ body {
 }
 
 .modal-title {
-  height: 25px;
-  width: 520px;
+  height: auto;
+  width: auto;
   color: #00999e;
   font-family: "Walkway SemiBold";
   font-size: 24px;
@@ -290,8 +290,8 @@ body {
   text-align: center;
 }
 .modal-body {
-  height: 42px;
-  width: 520px;
+  height: auto;
+  width: auto;
   color: #6d6d6d;
   font-family: "Walkway SemiBold";
   font-size: 18px;
