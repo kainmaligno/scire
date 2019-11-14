@@ -23,7 +23,7 @@ const Layout = ({ children, props }) => {
   return (
     <Lay>
       <NavBar />
-      <main style={{ paddingTop: "180px" }}>{children}</main>
+      <main style={{ paddingTop: "155px" }}>{children}</main>
       <Footer />
     </Lay>
   )
