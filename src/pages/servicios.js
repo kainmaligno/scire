@@ -8,7 +8,7 @@ import ServicesCard from "../components/components/Services/Card"
 const ServicesContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 2%;
+  padding: 4% 2% 2% 2%;
   width: 95vw;
   @media (max-width: 850px) {
     flex-direction: column;
