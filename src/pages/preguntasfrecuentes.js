@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 import Pointer from "../components/styledComponents/pointer"
 import FAQ from "../images/foto_preguntas.png"
-import FormFaq from '../components/styledComponents/FaqForm'
+import FormFaq from "../components/styledComponents/FaqForm"
 const TitleHeader = styled.p`
   height: 41px;
   color: #16a1b2;
@@ -21,14 +21,13 @@ const FaqWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position:relative;
-  @media (max-width:769px){
+  position: relative;
+  @media (max-width: 769px) {
     padding: 2em 5em 2em 2em;
   }
-  @media(max-width:375px){
-    flex-direction:column;
+  @media (max-width: 500px) {
+    flex-direction: column;
     padding: 2em 2em 2em 2em;
-
   }
 `
 const FaqContainer = styled.div`
@@ -36,47 +35,50 @@ const FaqContainer = styled.div`
   height: auto;
   box-sizing: border-box;
   border: 1px solid rgba(176, 176, 176, 0.5);
-  
-  a{
-    color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 20px;	line-height: 17px;
+
+  a {
+    color: #6d6d6d;
+    font-family: "Walkway SemiBold";
+    font-size: 20px;
+    line-height: 17px;
     background-color: transparent;
     height: 38px;
-    @media(max-width:375px){
-      height:100px;
+    @media (max-width: 500px) {
+      height: 100px;
     }
   }
-  a::before{
+  a::before {
   }
-  li{
+  li {
     padding: 1em;
     border-bottom: 1px solid rgba(176, 176, 176, 0.5);
-    /* @media(max-width:375px){
-      height:100px;
-    } */
   }
-  li:last-child{
-    border-bottom:none;
+  li:last-child {
+    border-bottom: none;
   }
-  p{
-    color: #6D6D6D;	font-family: "Walkway SemiBold";	font-size: 16px;	line-height: 20px;
+  p {
+    color: #6d6d6d;
+    font-family: "Walkway SemiBold";
+    font-size: 16px;
+    line-height: 20px;
     text-align: justify;
-    padding:20px
+    padding: 20px;
   }
 
-  @media(max-width:769px){
-    width:90%
+  @media (max-width: 769px) {
+    width: 90%;
   }
 `
 
 const AccordionContainer = styled.div`
   height: 77px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(176,176,176,0.1);
-    padding: 10px;
-  @media(max-width:375px){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(176, 176, 176, 0.1);
+  padding: 10px;
+  @media (max-width: 500px) {
     margin-top: 20px;
     height: 288px;
   }
@@ -88,8 +90,8 @@ const FaqImageContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @media(max-width:769px){
-    margin-left:1em;
+  @media (max-width: 769px) {
+    margin-left: 1em;
   }
 `
 const Preguntas = () => {
@@ -175,10 +177,9 @@ const Preguntas = () => {
               </a>
               <AccordionContainer className="uk-accordion-content">
                 <p>
-                  No. Los medicamentos que provocan sueño alteran los
-                  resultados de los estudios, por lo tanto es, muy importante
-                  desvelarlos para facilitar que duerman en el consultorio de
-                  forma natural.
+                  No. Los medicamentos que provocan sueño alteran los resultados
+                  de los estudios, por lo tanto es, muy importante desvelarlos
+                  para facilitar que duerman en el consultorio de forma natural.
                 </p>
               </AccordionContainer>
             </li>
@@ -194,7 +195,7 @@ const Preguntas = () => {
           />
         </FaqImageContainer>
       </FaqWrapper>
-      <FormFaq/>
+      <FormFaq />
     </Layout>
   )
 }

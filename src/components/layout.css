@@ -259,30 +259,13 @@ body {
   -o-user-select: none;
   user-select: none;
 }
-.btn-send-contact::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #72295e;
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition: 300ms ease-out;
-  transition: 300ms ease-out;
-}
+
 .btn-send-contact {
   height: 55px;
   width: 280px;
   border: none;
   border-radius: 8px;
-  background-color: #530e40;
+  background-color: #72295e;
   color: #fff;
   font-size: 24px;
   font-weight: 300;
@@ -294,17 +277,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-transition: color 300ms;
-  transition: color 300ms;
   position: relative;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.btn-send-contact:hover ::before {
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
 }
 
 .modal-title {

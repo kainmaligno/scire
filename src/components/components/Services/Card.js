@@ -18,6 +18,9 @@ const TextContainer = styled.div`
   @media (max-width: 850px) {
     margin-top: 45%;
   }
+  @media (max-width: 375px) {
+    margin-top: 40%;
+  }
 `
 const CardContainer = styled.div`
   margin-bottom: 3%;
