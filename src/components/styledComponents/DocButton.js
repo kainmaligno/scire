@@ -18,13 +18,17 @@ const HeaderButton = styled.button`
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  color: #ffffff;
+  a{
+    color: #ffffff;
+  }
   img.img-none{
     display:none;
     animation: doctoralia 0.5s 1;
   }
   &:hover {
-    color: ${pallete.color.secondary.main};
+    a{
+      color: ${pallete.color.secondary.main};
+    }
     img.img-1{
       display:none;
     }
@@ -40,7 +44,7 @@ const HeaderButton = styled.button`
       }
     }
   }
-  span {
+  a {
     font-family: "Gotham Condensed";
     font-size: 18px;
     font-weight: 300;

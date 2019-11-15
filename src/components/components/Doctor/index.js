@@ -3,89 +3,127 @@ import styled from "styled-components"
 import Button from "../../styledComponents/DocButton"
 import doctoralia from "../../../images/doctoralia.png"
 import doctoraliaTurquesa from "../../../images/doctoralia-turquoise.png"
+import avatar from "../../../images/doctor-icon.png"
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
-  margin: -5em 4em 4em 4em;
+  align-items: center;
+  margin: -5em 4em 10em 4em;
 `
 const SideBar = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-left: 50px;
-  height: 55vh;
-  img {
-    height: 50px;
-  }
+  height: 50vh;
+  width: 25vw;
 `
-const Profile = styled.div`
+const Name = styled.p`
+  font-family: "Gotham Condensed";
+  font-size: 24px;
+  color: #6d6d6d;
+  line-height: 50px;
+  margin-bottom: 0;
+`
+const Header = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 70vw;
-  span.name {
-    font-family: "Gotham Condensed";
-    font-size: 24px;
-    color: #6d6d6d;
-    line-height: 50px;
-  }
+  margin-bottom: 30px;
   span {
     font-family: "Gotham Condensed";
     font-size: 18px;
     color: #aa5397;
     line-height: 18px;
   }
+`
+const Avatar = styled.img`
+  height: 120px;
+  border: 3px solid #aa5397;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+`
+const Profile = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90vw;
+  div {
+    display: flex;
+  }
+`
+const Parragraph = styled.div`
+  flex-direction: column;
+  width: 70vw;
   p {
     text-align: justify;
     margin-bottom: 0;
     font-size: 18px;
   }
-  img {
-    height: 120px;
-    border: 3px solid #aa5397;
-    border-radius: 500px;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-  }
 `
 
-const Doctor = ({ profile_img, name, especialidad, cedula, info, logos }) => {
+const Doctor = ({
+  profile_img,
+  name,
+  especialidad,
+  cedula,
+  info,
+  doc_link,
+  logos,
+}) => {
   return (
     <Container>
       <Profile>
-        <img src={profile_img} alt="profile_img" />
-        <span className="name">{name}</span>
-        <span>{especialidad}</span>
-        <span>{cedula}</span>
-        {info.map((data, i) => (
-          <p key={i}> {data}</p>
-        ))}
+        <Avatar src={profile_img ? profile_img : avatar} alt="profile_img" />
+        <Name>{name}</Name>
+        <Header>
+          <div>
+            <span>{especialidad}</span>
+            <span>{cedula}</span>
+          </div>
+          {doc_link ? (
+            <Button>
+              <a
+                style={{ textDecorationLine: "none" }}
+                href={doc_link}
+                target="__blank"
+              >
+                ver perfil en doctoralia
+              </a>
+              <img
+                src={doctoralia}
+                alt="doctoralia"
+                style={{ height: "25px" }}
+                className="img-1"
+              />
+              <img
+                src={doctoraliaTurquesa}
+                alt="doctoralia"
+                style={{ height: "25px" }}
+                className="img-none"
+              />
+            </Button>
+          ) : (
+            ""
+          )}
+        </Header>
+        <div>
+          <Parragraph>
+            {info.map((data, i) => (
+              <p key={i}> {data}</p>
+            ))}
+          </Parragraph>
+          <SideBar>
+            {logos.map((data, i) => (
+              <img key={i} src={data} alt={data} style={{ width: "140px" }} />
+            ))}
+          </SideBar>
+        </div>
       </Profile>
-      <SideBar>
-        <Button style={{ marginBottom: "30px" }}>
-          <span>ver perfil en doctoralia</span>
-          <img
-            src={doctoralia}
-            alt="doctoralia"
-            style={{ height: "25px" }}
-            className="img-1"
-          />
-          <img
-            src={doctoraliaTurquesa}
-            alt="doctoralia"
-            style={{ height: "25px" }}
-            className="img-none"
-          />
-        </Button>
-        {logos.map((data, i) => (
-          <img key={i} src={data} alt={data} />
-        ))}
-      </SideBar>
     </Container>
   )
 }
