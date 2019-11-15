@@ -31,16 +31,7 @@ const data = [
 const SecondPage = () => (
   <Layout>
     <SEO title="Acerca de Nosotros" />
-    {data.map(doctor => {
-      return (
-        <Doctor
-          key={doctor.name}
-          data={doctor}
-          width={"50px"}
-          border={"1px solid black"}
-        />
-      )
-    })}
+    
   </Layout>
 )
 
