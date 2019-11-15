@@ -3,7 +3,6 @@ import "./header.css"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-
 import Button from "../../styledComponents/Button"
 //todo al contenedor de informacion hacer position relative y z-index *2
 const Header = ({ image, title, body, btnInfo }) => (

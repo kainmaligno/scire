@@ -1,10 +1,10 @@
 [
-
-    {
-      "nosotros":{
-            "title":"UN SERVICIO DE CALIDAD ES POSIBLE, CUANDO ELIGES AL MEJOR EQUIPO.",
-            "body":"Tenemos un equipo de médicos especialistas certificados, expertos en el tratamiento de padecimientos neurológicos.Avalados por instituciones nacionales e internacionales.",
-            "btnInfo":"QUIERO MI CITA"
-        }
+  {
+    "nosotros": {
+      "title": "UN SERVICIO DE CALIDAD ES POSIBLE, CUANDO ELIGES AL MEJOR EQUIPO.",
+      "body": "Tenemos un equipo de médicos especialistas certificados, expertos en el tratamiento de padecimientos neurológicos.Avalados por instituciones nacionales e internacionales.",
+      "btnInfo": "QUIERO MI CITA",
+      "pointer": "Acerca de Nosotros"
     }
+  }
 ]

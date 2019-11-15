@@ -5,11 +5,10 @@ const Pointer = styled.p`
   width: 940px;
   color: #9b79c1;
   font-family: "Walkway SemiBold";
-  font-size: 18px;
+  font-size: 22px;
   line-height: 17px;
   margin: 3em;
   margin-left: 4em;
-  text-transform: lowercase;
   @media (max-width: 768px) {
     width: 80%;
     margin-left: 1em;
