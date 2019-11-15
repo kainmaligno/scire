@@ -4,16 +4,20 @@ import SideImg               from './SideImg';
 import { Side, Images, Img } from './styles';
 
 const SideBarDoctor = ( props ) => {
-    let { logos } = props;
+    let { logos, button } = props;
     return(
-        <Side>  
-            <ButtonDoctoralia />
+        <Side> 
+            {
+                button ?
+                    <ButtonDoctoralia />
+                : null
+            }
             <Images>
-                {/* {
-                    logos.map( logo => {
-                        return  <Img src = { logo } />
+                {
+                    logos.map( (logo, index) => {
+                        return  <Img src = { logo } key = { index }/>
                     })
-                } */}
+                }
             </Images>
         </Side>
     )

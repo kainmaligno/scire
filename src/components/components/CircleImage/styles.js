@@ -8,12 +8,12 @@ import pallete from "../../../pallete";
 */
 
 export const Circle = styled.div`
-    border             : ${ props => props.border || '1px'} ${ props => props.borderStyle || 'solid'} ${ props => props.colorStyle};
-    border-radius      : 50%;
-    background-image   : url("${props => props.src }");
-    background-position: center;
-    background-repeat  : no-repeat;
-    background-size    : cover;
-    height             : 100px;
-    width              : 100px;
+    // border             : ${ props => props.border || '1px'} ${ props => props.borderStyle || 'solid'} ${ props => props.colorStyle};
+    
+    // background-image   : url("${props => props.src }");
+    // background-position: center;
+    // background-repeat  : no-repeat;
+    // background-size    : cover;
+    height             : 150px;
+    width              : 150px;
 `
