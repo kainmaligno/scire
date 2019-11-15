@@ -5,7 +5,7 @@ const Circleimage = ( props ) => {
     let { src, width, border } = props;
     return(
         <Circle width = { width } src = { src }>
-            
+            <img src={ src } />
         </Circle>
     )
 }

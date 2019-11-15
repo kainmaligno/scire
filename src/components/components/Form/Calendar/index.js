@@ -1,18 +1,22 @@
 import React from 'react';
 import { Space,Calen,Span, Input } from './styles';
+import DatePicker from './Calendar';
 
 const Calendar = ( props ) => {
     let { today, maxDay } = props;
     return(
         <Space>
             <Calen>
-                <Span>Fecha<sup>*</sup></Span>
-                <Input type = "date" min = { today } max={ maxDay } value = { today }/>
+                <DatePicker 
+                    text = { "Fecha" }
+                />
             </Calen>
             <Calen>
-                <Span>Segunda opción de fecha<sup>*</sup></Span>
-                <Input type = "date" min = { today } max={ maxDay } value = { today }/>
+                <DatePicker 
+                    text = { "Segunda opción de fecha" }
+                />
             </Calen>
+            
         </Space>
     )
 }
