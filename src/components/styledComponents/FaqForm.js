@@ -33,18 +33,22 @@ const FormInputContainer = styled.form`
 const SimpleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 48%;
+  width: 42%;
+  @media(max-width:1600px){
+    width:48%;
+  }
+ 
   @media (max-width: 1024px) {
-    width: 88%;
+    width: 74%;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 88%;
   }
   @media (max-width: 550px) {
-    width: 113%;
+    width: 99%;
   }
 `
 const TextContainer = styled.div`
@@ -75,6 +79,36 @@ const TextArea = styled.textarea`
     width: 100%;
   }
 `
+ const InputSpace = styled.div`
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    margin         : 10px 0px;
+    width          : 45%;
+    @media ( max-width: 1600px ){
+        width: 45%;
+    }
+    @media ( max-width: 700px ){
+        width: 100%;
+    }
+    @media ( max-width: 700px ){
+        width: 100%;
+    }
+    @media ( max-width: 700px ){
+        width: 100%;
+    }
+`
+const InputElem = styled.input`
+    border       : 1px solid #B0B0B0;
+    border-radius: 4px;
+    padding      : 10px 0px;
+    outline      : none;
+    width        : 100%;
+`
+const Span = styled.span`
+    color    : #313131;
+    font-size: 18px;
+`
 const FaqForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -97,25 +131,17 @@ const FaqForm = () => {
           <input
             type="hidden"
             name="_next"
-            //value="peaceful-sinoussi-e5a1a5.netlify.com/gracias/"
+            value="peaceful-sinoussi-e5a1a5.netlify.com/gracias/"
           />
           <SimpleContainer>
-            <Input
-              action={Name}
-              label={"Nombre"}
-              required={true}
-              value={name}
-              width={"40%"}
-              name="name"
-            />
-            <Input
-              action={Email}
-              label={"Email"}
-              required={true}
-              value={email}
-              width={"40%"}
-              name="email"
-            />
+            <InputSpace>
+            <Span>Nombre</Span>
+            <InputElem type="text" name="nombre" id=""/>
+            </InputSpace>
+            <InputSpace>
+            <Span>Email</Span>
+            <InputElem type="email" name="email" id=""/>
+            </InputSpace>
           </SimpleContainer>
           <TextContainer>
             <span>Escribe tu duda o mensaje</span>
