@@ -1,6 +1,4 @@
 import styled  from "styled-components";
-import pallete from "../../../pallete";
-
 
 export const Space = styled.div`
     color     : #00999E;
