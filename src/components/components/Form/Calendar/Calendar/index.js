@@ -8,7 +8,7 @@ function DatePicker( props ){
     return(
         <div>
             <label for={text}>{ text }<sup>*</sup></label>
-            <input type="date" name="dateofbirth" id={text}></input>
+            <Input type="date" name="fechaCita" id={text}></Input>
         </div>
     )
 }

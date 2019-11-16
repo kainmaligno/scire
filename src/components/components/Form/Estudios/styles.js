@@ -33,6 +33,7 @@ export const SelectSpace = styled.div`
     @media ( max-width: 900px ){
         flex-direction: column;
     }
+   
 `
 export const EstudiosSpace = styled.div`
     display        : flex;

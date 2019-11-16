@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import Title from "../components/Title"
 import Input from "../components/Form/Input"
-
+import {Link} from 'gatsby'
 const FormContainer = styled.div`
   width: 100%;
   height: auto;
@@ -33,18 +33,22 @@ const FormInputContainer = styled.form`
 const SimpleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 48%;
+  width: 42%;
+  @media(max-width:1600px){
+    width:48%;
+  }
+ 
   @media (max-width: 1024px) {
-    width: 88%;
+    width: 74%;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 88%;
   }
   @media (max-width: 550px) {
-    width: 113%;
+    width: 99%;
   }
 `
 const TextContainer = styled.div`
@@ -75,16 +79,46 @@ const TextArea = styled.textarea`
     width: 100%;
   }
 `
+ const InputSpace = styled.div`
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    margin         : 10px 0px;
+    width          : 45%;
+    @media ( max-width: 1600px ){
+        width: 45%;
+    }
+    @media ( max-width: 700px ){
+        width: 100%;
+    }
+    @media ( max-width: 700px ){
+        width: 100%;
+    }
+    @media ( max-width: 700px ){
+        width: 100%;
+    }
+`
+const InputElem = styled.input`
+    border       : 1px solid #B0B0B0;
+    border-radius: 4px;
+    padding      : 10px 10px;
+    outline      : none;
+    width        : 100%;
+`
+const Span = styled.span`
+    color    : #313131;
+    font-size: 18px;
+`
 const FaqForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
-
   function Name(e) {
     setName(e.target.value)
   }
   function Email(e) {
     setEmail(e.target.value)
   }
+
   return (
     <FormContainer>
       <FormWrapper>
@@ -97,32 +131,26 @@ const FaqForm = () => {
           <input
             type="hidden"
             name="_next"
-            value="https://scire.com.mx/gracias"
+            value="peaceful-sinoussi-e5a1a5.netlify.com/gracias/"
           />
           <SimpleContainer>
-            <Input
-              action={Name}
-              label={"Nombre"}
-              required={true}
-              value={name}
-              width={"40%"}
-            />
-            <Input
-              action={Email}
-              label={"Email"}
-              required={true}
-              value={email}
-              width={"40%"}
-            />
+            <InputSpace>
+            <Span>Nombre</Span>
+            <InputElem type="text" name="nombre" id=""/>
+            </InputSpace>
+            <InputSpace>
+            <Span>Email</Span>
+            <InputElem type="email" name="email" id=""/>
+            </InputSpace>
           </SimpleContainer>
           <TextContainer>
             <span>Escribe tu duda o mensaje</span>
             <TextArea name="mensaje" cols="30" row="10" width={"90%"} />
           </TextContainer>
-
+          <Link to='/gracias/'></Link>
           <button
             className="btn-send-contact"
-            type="button"
+            type=""
             uk-toggle="target: #modal-close-default"
           >
             ENVIAR
@@ -130,11 +158,11 @@ const FaqForm = () => {
           {/* This is the modal with the default close button */}
           <div id="modal-close-default" uk-modal="true">
             <div className="uk-modal-dialog uk-modal-body">
-              <button
+              {/* <button
                 className="uk-modal-close-default"
                 type="button"
                 uk-close="true"
-              />
+              /> */}
               <h2 className="uk-modal-title modal-title">
                 ¡Hemos recibido tu mensaje!
               </h2>
@@ -142,6 +170,7 @@ const FaqForm = () => {
                 Te sugerimos estar al pendiente de tu correo electrónico, para
                 recibir nuestra respuesta.
               </p>
+              <Link to="/gracias/">Continuar</Link>
             </div>
           </div>
         </FormInputContainer>

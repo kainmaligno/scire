@@ -4,7 +4,11 @@ import styled from 'styled-components';
 export const DoctoraliaBtn = styled.div`
     margin-bottom: 35px;
     margin-top   :10px;
-    width        : 100%;
+    width        : 132%;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items: center;
 `
 
 export const Btn = styled.button`
