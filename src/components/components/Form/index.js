@@ -1,150 +1,158 @@
 import React, { useState } from "react"
-import { Subtitle,Space,Section,P,Btn,Action } from "./styles";
-import Input               from './Input';
-import Doctoralia          from './Doctoralia';
-import Bullets             from './Bullets';
-import Calendar            from './Calendar';
-import Estudios            from './Estudios';
+import {
+  Subtitle,
+  Space,
+  Section,
+  P,
+  Btn,
+  Action,
+  InputElem,
+  Span,
+  InputSpace,
+  SpanViolet,
+  SelectSpace,
+  EstudiosSpace,
+  Title,
+  TextArea
+} from "./styles"
+import Input from "./Input"
+import Doctoralia from "./Doctoralia"
+import Bullets from "./Bullets"
+import Calendar from "./Calendar"
+import Estudios from "./Estudios"
 
 const Form = () => {
-    const [ name   , setName    ] = useState('');
-    const [ edad   , setEdad    ] = useState('');
-    const [ celular, setCelular ] = useState('');
-    const [ fijo   , setFijo    ] = useState('');
-    const [ si     , setSi      ] = useState(false);
-    const [ no     , setNo      ] = useState(false);
-    const [ consulta, setConsulta ] = useState( false );
-    const [ estudio, setEstudio ] = useState( false );
-    const [ minDay , setMinday  ] = useState('');
-    const [ maxDay , setMaxday  ] = useState('');
-    /* Set Name, Edad, Celular, y Fijo*/
-    function Name( e ){ 
-        setName( e.target.value );
-     }
-    function Edad( e ){ 
-        setEdad( e.target.value ); 
-    }
-    function Celular( e ){ 
-        setCelular( e.target.value ); 
-    }
-    function Fijo( e ){ 
-        setFijo( e.target.value ); 
-    }
-    /* Set BUllets si o no */
-    function EsPaciente( e ){
-        
-    }
-    function Si( e ){
-        setSi( !si );
-        setNo( false );
-    }
-    function No( e ){
-        setSi( false );
-        setNo( !no );
-    }
-    function NamePaciente(){
+  const [si, setSi] = useState(false)
+  const [no, setNo] = useState(false)
+  const [consulta, setConsulta] = useState(false)
+  const [estudio, setEstudio] = useState(false)
+  const [minDay, setMinday] = useState("")
+  const [maxDay, setMaxday] = useState("")
+  const [estudios, setEstudios] = useState(false)
 
-    }
-    function EdadPaciente(){
+  function set() {
+    setEstudios(!estudios)
+  }
 
-    }
-    function Consulta(){
-        setConsulta( !consulta )
-        setEstudio( false )
-    }
-    function Estudio(){
-        setEstudio( !estudio )
-        setConsulta( false )
-    }
+  function Si(e) {
+    setSi(!si)
+    setNo(false)
+  }
+  function No(e) {
+    setSi(false)
+    setNo(!no)
+  }
+  function Consulta() {
+    setConsulta(!consulta)
+    setEstudio(false)
+  }
+  function Estudio() {
+    setEstudio(!estudio)
+    setConsulta(false)
+  }
 
-    /* Get today */
-    
-        
-    
+  /* Get today */
+  return (
+    <Space
+      action="https://formspree.io/mzbbvwzz"
+      method="POST"
+      name="agendarCita"
+    >
+      <input
+        type="hidden"
+        name="_next"
+        value="https://www.scire.com.mx/gracias/"
+      />
+      <Subtitle>Deja tus datos y nosotros nos ponemos en contacto</Subtitle>
+      <Doctoralia />
+      <Section>
+        <InputSpace>
+          <Span>Nombre</Span>
+          <InputElem type="text" name="nombre" id="" />
+        </InputSpace>
+        <InputSpace>
+          <Span>Edad</Span>
+          <InputElem type="text" name="edad" id="" />
+        </InputSpace>
+      </Section>
 
-   
-
-
-    return(
-        <Space>
-            <Subtitle>Deja tus datos y nosotros nos ponemos en contacto</Subtitle>
-            <Doctoralia />
-            <Section>
-                <Input 
-                    action   = { Name }
-                    label    = { "Nombre" }
-                    required = { true }
-                    value    = { name }
-                    width    = { "60%" }
-                />
-                <Input 
-                    action   = { Edad }
-                    label    = { "Edad" }
-                    required = { true }
-                    value    = { edad }
-                    width    = { "35%" }
-                />
-            </Section>
-            <Section>
-                <Input 
-                    action   = { Celular }
-                    label    = { "Teléfono celular" }
-                    required = { true }
-                    value    = { celular }
-                    width    = { "48%" }
-                />
-                <Input 
-                    action   = { Fijo }
-                    label    = { "Teléfono fijo" }
-                    value    = { fijo }
-                    width    = { "48%" }
-                />
-            </Section>
-            <Bullets 
-                actions  = { { Si, No } }
-                text     = { "¿Eres tú el paciente?" } 
-                textBOne = { "Si" } 
-                textBTwo = { "No" }
-                values   = { { si, no } }
-                firstWid = { "100px" }
-            />
-            {
-             no ? <Section> 
-                    <Input 
-                        action   = { NamePaciente }
-                        label    = { "Nombre del paciente" }
-                        required = { true }
-                        width    = { "60%" }
-                    />
-                    <Input 
-                        action   = { EdadPaciente }
-                        label    = { "Edad del paciente" } 
-                        required = { true }
-                        width    = { "35%" }
-                    />
-                  </Section> : null   
-            }
-            <Bullets 
-                actions  = { { Consulta, Estudio } }
-                text     = { "¿Qué servicio requieres?" } 
-                textBOne = { "Consulta" } 
-                textBTwo = { "Estudio" }
-                values   = { { consulta, estudio } }
-                firstWid = { "100px" }
-            />
-            {
-                estudio ? <Estudios />
-                : null
-            }
+      <Section>
+        <InputSpace>
+          <Span>Telefono Celular</Span>
+          <InputElem type="text" name="telefonoCelular" id="" />
+        </InputSpace>
+        <InputSpace>
+          <Span>Telefono Fijo</Span>
+          <InputElem type="text" name="telefonoFijo" id="" />
+        </InputSpace>
+      </Section>
+      <Bullets
+        actions={{ Si, No }}
+        text={"¿Eres tú el paciente?"}
+        textBOne={"Si"}
+        textBTwo={"No"}
+        values={{ si, no }}
+        firstWid={"100px"}
+      />
+      {no ? (
+        <Section>
+          <InputSpace>
+            <Span>Nombre del Paciente</Span>
+            <InputElem type="text" name="nombrePaciente" id="" />
+          </InputSpace>
+          <InputSpace>
+            <Span>Edad del Paciente</Span>
+            <InputElem type="text" name="edadPaciente" id="" />
+          </InputSpace>
+        </Section>
+      ) : null}
+      <Bullets
+        actions={{ Consulta, Estudio }}
+        text={"¿Qué servicio requieres?"}
+        textBOne={"Consulta"}
+        textBTwo={"Estudio"}
+        values={{ consulta, estudio }}
+        firstWid={"100px"}
+      />
+      {estudio ? (
+        <div>
+            <span>Elije el estudio que deseas</span>
+          <SelectSpace >
+            <select name="estudio requerido" className="uk-select">
+              <option value="ELECTROENCEFALOGRAMA">ELECTROENCEFALOGRAMA</option>
+              <option value="ELECTROMIOGRAFÍA">ELECTROMIOGRAFÍA</option>
+              <option value="FIBRA ÚNICA">FIBRA ÚNICA</option>
+              <option value="MONITOREO INTRAOPERATORIO">MONITOREO INTRAOPERATORIO</option>
+              <option value="POTENCIALES EVOCADOS">POTENCIALES EVOCADOS</option>
+              <option value="POLISOMNOGRAFÍA (ESTUDIOS DEL SUEÑO)">POLISOMNOGRAFÍA (ESTUDIOS DEL SUEÑO)</option>
+              <option value="SISTEMA NERVIOSO AUTÓNOMO">SISTEMA NERVIOSO AUTÓNOMO</option>
+              <option value="TAMÍZ NEONATAL">TAMÍZ NEONATAL</option>
+              <option value="VELOCIDADES DE CONDUCCIÓN NERVIOSA">VELOCIDADES DE CONDUCCIÓN NERVIOSA</option>
+            </select>
+            <SpanViolet onClick={set}>
+              ¿No conoces el nombre del estudio?
+            </SpanViolet>
             
-            <Calendar today = { "2019-11-13" } maxDay = { "2020-01-13"}/>
-            <P>Las fechas de consulta son sugeridas y están condicionadas a la agenda de nuestros médicos. Nos comunicaremos contigo para confirmar la disponibilidad.</P>
-            <Action>
-                <Btn>Enviar</Btn>
-            </Action>
-        </Space>
-    )
+          </SelectSpace>
+        
+       </div>
+      ) : null}
+
+        {estudios ? <EstudiosSpace>
+                    <Title>Describe el estudio que deseas<sup>*</sup></Title>
+                    <TextArea  name="descripcion estudio" cols="30" row="10"/>
+                </EstudiosSpace> :null}
+      <Calendar today={"2019-11-13"} maxDay={"2020-01-13"} />
+      <P>
+        Las fechas de consulta son sugeridas y están condicionadas a la agenda
+        de nuestros médicos. Nos comunicaremos contigo para confirmar la
+        disponibilidad.
+      </P>
+      <Action>
+        <Btn>Enviar</Btn>
+      </Action>
+    </Space>
+  )
 }
 
-
-export default Form;
+export default Form

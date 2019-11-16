@@ -13,7 +13,7 @@ export const Calen = styled.div`
     display       : flex;
     flex-direction: column;
     margin        : 5px 0px;
-    width         : 48%;
+    width         : 45%;
     @media ( max-width: 700px ){
         width: 100%;
     }
@@ -24,4 +24,5 @@ export const Span = styled.span`
 `
 export const Input = styled.input`
     padding: 10px;
+    
 `

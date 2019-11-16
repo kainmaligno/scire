@@ -101,7 +101,7 @@ const TextArea = styled.textarea`
 const InputElem = styled.input`
     border       : 1px solid #B0B0B0;
     border-radius: 4px;
-    padding      : 10px 0px;
+    padding      : 10px 10px;
     outline      : none;
     width        : 100%;
 `

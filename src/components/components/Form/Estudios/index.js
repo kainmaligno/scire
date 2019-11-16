@@ -15,7 +15,7 @@ function Estudios( props ){
                     <option>ELECTROMIOGRAFÍA</option>  
                     <option>FIBRA ÚNICA</option>  
                     <option>MONITOREO INTRAOPERATORIO</option>     
-                    <option>Potenciales Evocados</option> 
+                    <option>POTENCIALES EVOCADOS</option> 
                     <option>POLISOMNOGRAFÍA (ESTUDIOS DEL SUEÑO)</option> 
                     <option>SISTEMA NERVIOSO AUTÓNOMO</option> 
                     <option>TAMÍZ NEONATAL</option> 
