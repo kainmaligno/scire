@@ -15,19 +15,15 @@ import {
   Title,
   TextArea
 } from "./styles"
-import Input from "./Input"
 import Doctoralia from "./Doctoralia"
 import Bullets from "./Bullets"
 import Calendar from "./Calendar"
-import Estudios from "./Estudios"
 
 const Form = () => {
   const [si, setSi] = useState(false)
   const [no, setNo] = useState(false)
   const [consulta, setConsulta] = useState(false)
   const [estudio, setEstudio] = useState(false)
-  const [minDay, setMinday] = useState("")
-  const [maxDay, setMaxday] = useState("")
   const [estudios, setEstudios] = useState(false)
 
   function set() {

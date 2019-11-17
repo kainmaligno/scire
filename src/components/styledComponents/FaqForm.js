@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import Title from "../components/Title"
-import Input from "../components/Form/Input"
 import {Link} from 'gatsby'
+
 const FormContainer = styled.div`
   width: 100%;
   height: auto;
@@ -110,15 +110,6 @@ const Span = styled.span`
     font-size: 18px;
 `
 const FaqForm = () => {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  function Name(e) {
-    setName(e.target.value)
-  }
-  function Email(e) {
-    setEmail(e.target.value)
-  }
-
   return (
     <FormContainer>
       <FormWrapper>
@@ -155,14 +146,8 @@ const FaqForm = () => {
           >
             ENVIAR
           </button>
-          {/* This is the modal with the default close button */}
           <div id="modal-close-default" uk-modal="true">
             <div className="uk-modal-dialog uk-modal-body">
-              {/* <button
-                className="uk-modal-close-default"
-                type="button"
-                uk-close="true"
-              /> */}
               <h2 className="uk-modal-title modal-title">
                 ¡Hemos recibido tu mensaje!
               </h2>

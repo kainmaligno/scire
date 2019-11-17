@@ -1,9 +1,8 @@
 import React from 'react';
-import { Space,Calen,Span, Input } from './styles';
+import { Space, Calen} from './styles';
 import DatePicker from './Calendar';
 
-const Calendar = ( props ) => {
-    let { today, maxDay } = props;
+const Calendar = () => {
     return(
         <Space>
             <Calen>
