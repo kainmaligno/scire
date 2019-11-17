@@ -10,4 +10,16 @@ export const Space = styled.div`
     line-height:41px;
     margin-top: 1em;
     margin-bottom: 1rem;
+    @media(max-width:1024px){
+        margin-top:1rem;
+    }
+    @media(max-width:768px){
+        margin-top:1rem;
+    }
+    @media(max-width:414px){
+        margin-top:0;
+    }
+    @media(max-width:375px){
+        margin-top:0;
+    }
 `

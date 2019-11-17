@@ -4,11 +4,21 @@ import styled from 'styled-components';
 export const DoctoraliaBtn = styled.div`
     margin-bottom: 35px;
     margin-top   :10px;
-    width        : 132%;
+    width        : 98%;
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
     align-items: center;
+    @media(max-width:414px){
+        width:100%;
+      justify-content:center;
+      margin-top:2em;
+    }
+    @media(max-width:375px){
+      width:100%;
+      justify-content:center;
+      margin-top:2em;
+    }
 `
 
 export const Btn = styled.button`

@@ -53,6 +53,9 @@ const Form = () => {
 
   /* Get today */
   return (
+      <>
+      <Subtitle>Deja tus datos y nosotros nos ponemos en contacto</Subtitle>
+      <Doctoralia />
     <Space
       action="https://formspree.io/mzbbvwzz"
       method="POST"
@@ -63,8 +66,7 @@ const Form = () => {
         name="_next"
         value="https://www.scire.com.mx/gracias/"
       />
-      <Subtitle>Deja tus datos y nosotros nos ponemos en contacto</Subtitle>
-      <Doctoralia />
+      
       <Section>
         <InputSpace>
           <Span>Nombre</Span>
@@ -152,6 +154,7 @@ const Form = () => {
         <Btn>Enviar</Btn>
       </Action>
     </Space>
+    </>
   )
 }
 
