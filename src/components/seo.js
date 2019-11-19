@@ -61,10 +61,7 @@ function SEO({ description, lang, meta, title }) {
       />
 
       {/**Facebook Meta Tags */}
-      <meta
-        property="og:url"
-        content="https://peaceful-sinoussi-e5a1a5.netlify.com"
-      />
+      <meta property="og:url" content="https://www.scire.com.mx/" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Scire" />
       <meta
