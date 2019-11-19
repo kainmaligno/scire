@@ -82,7 +82,7 @@ const QuienesSomos = () => {
           color: "#00999E",
         }}
       >
-        NUESTROS MÉDICOS
+        NUESTRO EQUIPO
       </p>
       <article>
         <div>

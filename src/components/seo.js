@@ -92,7 +92,7 @@ function SEO({ description, lang, meta, title }) {
     Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."
       />
       <meta
-        name="twitter:image"
+        name="twitter:image:src"
         content="https://res.cloudinary.com/dtvigurwl/image/upload/v1574123000/Scire/ELECTROENCEFALOGRAMA_1.png"
       />
 
