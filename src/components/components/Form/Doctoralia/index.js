@@ -8,7 +8,7 @@ import doctoraliaTurquesa from "../../../../images/doctoralia-turquoise.png"
 function Doctoralia( props ){
     return(
         <DoctoraliaBtn>
-            <Button>
+            <Button type="link">
             <a
                 style={{ textDecorationLine: "none" }}
                 href="https://www.doctoralia.com.mx/yokary-mellado-ortiz/neurofisiologo-neurologo/san-andres-cholula"

@@ -7,11 +7,11 @@ export const Space = styled.div`
     width           : 20%;
     @media( max-width: 900px ){
         justify-content: center;
-        width          : 50%;
+        width          : 35%;
     }
-    @media ( max-width: 400px ){
+    @media ( max-width: 411px ){
         flex-direction: column;
-        width:100%;
+        width          : 35%;
     }
 
    
@@ -23,7 +23,8 @@ export const Span = styled.p`
     margin-left: 10px;
     width      : ${ props => props.firstWid || 'auto' };
     @media ( max-width: 900px ){
-        width: 1550%;
+        width:auto;
+    margin-left: 30%;
     }
     @media ( max-width: 400px ){
         margin-left: 35px;

@@ -3,6 +3,25 @@ import styled from 'styled-components';
 export const Space = styled.form`
     margin-left     : 20%;
     width           : 60%;
+    @media(max-width:414px){
+        width: 100%;
+        margin-left:0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    @media(max-width:375px){
+        width: 100%;
+        margin-left:0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
 `
 
 
@@ -21,6 +40,9 @@ export const SelectSpace = styled.div`
         border       : 1px solid #B0B0B0;
     border-radius: 4px;
     outline      : none;
+    @media(max-width:411px){
+        width:70%
+    }
     }
 `
 
@@ -38,7 +60,21 @@ export const Section = styled.div`
     width          : 100%;
     @media ( max-width: 700px ){
         flex-direction: column;
+
     }
+
+    @media(max-width:414px){
+        flex-direction: column;
+        align-items    : center;
+
+
+    }
+    @media(max-width:375px){
+        flex-direction: column;
+        align-items    : center;
+
+}
+
 `
 export const InputSpace = styled.div`
 display        : flex;

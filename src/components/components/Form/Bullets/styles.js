@@ -27,6 +27,7 @@ export const Inputs = styled.div`
     }
     @media ( max-width: 400px ){
         flex-direction: column;
+        width:auto;
     }
 
 `
