@@ -27,55 +27,77 @@ function SEO({ description, lang, meta, title }) {
   )
 
   return (
-    
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
       titleTemplate={`${site.siteMetadata.title} | ${title}`}
-     
     >
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Una empresa creada
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="Una empresa creada
     por seres humanos
     para el cuidado y la salud de
     otros seres humanos. 
-    Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."/>
+    Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."
+      />
 
-    {/**Google / Search Engine Tags */}
-<meta itemprop="name" content="Scire"/>
-<meta itemprop="description" content="Una empresa creada
+      {/**Google / Search Engine Tags */}
+      <meta itemprop="name" content="Scire" />
+      <meta
+        itemprop="description"
+        content="Una empresa creada
     por seres humanos
     para el cuidado y la salud de
     otros seres humanos. 
-    Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."/>
-<meta itemprop="image" content="http://res.cloudinary.com/drakarzamael/image/upload/v1573178919/estudiosBlog/ELECTROENCEFALOGRAMA_open.svg"/>
+    Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."
+      />
+      <meta
+        itemprop="image"
+        content="https://res.cloudinary.com/dtvigurwl/image/upload/v1574123000/Scire/ELECTROENCEFALOGRAMA_1.png"
+      />
 
-    {/**Facebook Meta Tags */}
-<meta property="og:url" content="https://peaceful-sinoussi-e5a1a5.netlify.com"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Scire"/>
-<meta property="og:description" content="Una empresa creada
+      {/**Facebook Meta Tags */}
+      <meta
+        property="og:url"
+        content="https://peaceful-sinoussi-e5a1a5.netlify.com"
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Scire" />
+      <meta
+        property="og:description"
+        content="Una empresa creada
     por seres humanos
     para el cuidado y la salud de
     otros seres humanos. 
-    Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."/>
-<meta property="og:image" content="http://res.cloudinary.com/drakarzamael/image/upload/v1573178919/estudiosBlog/ELECTROENCEFALOGRAMA_open.svg"/>
+    Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."
+      />
+      <meta
+        property="og:image"
+        content="https://res.cloudinary.com/dtvigurwl/image/upload/v1574123000/Scire/ELECTROENCEFALOGRAMA_1.png"
+      />
 
-  {/**Twitter Meta Tags */}
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Scire"/>
-<meta name="twitter:description" content="Una empresa creada
+      {/**Twitter Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Scire" />
+      <meta
+        name="twitter:description"
+        content="Una empresa creada
     por seres humanos
     para el cuidado y la salud de
     otros seres humanos. 
-    Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."/>
-<meta name="twitter:image" content="http://res.cloudinary.com/drakarzamael/image/upload/v1573178919/estudiosBlog/ELECTROENCEFALOGRAMA_open.svg"/>
+    Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."
+      />
+      <meta
+        name="twitter:image"
+        content="https://res.cloudinary.com/dtvigurwl/image/upload/v1574123000/Scire/ELECTROENCEFALOGRAMA_1.png"
+      />
 
-{/**Meta Tags Generated via http://heymeta.com */}
-</Helmet>
+      {/**Meta Tags Generated via http://heymeta.com */}
+    </Helmet>
   )
 }
 
@@ -90,7 +112,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  url:PropTypes.string
+  url: PropTypes.string,
 }
 
 export default SEO
