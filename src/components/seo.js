@@ -78,7 +78,7 @@ function SEO({ description, lang, meta, title }) {
       />
 
       {/**Twitter Meta Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content="Scire" />
       <meta
         name="twitter:description"
@@ -89,7 +89,7 @@ function SEO({ description, lang, meta, title }) {
     Somos una empresa mexicana de servicios de salud especializada en estudios de diagnóstico neurofisiológico y neurología."
       />
       <meta
-        name="twitter:image:src"
+        property="og:image"
         content="https://res.cloudinary.com/dtvigurwl/image/upload/v1574123000/Scire/ELECTROENCEFALOGRAMA_1.png"
       />
 
