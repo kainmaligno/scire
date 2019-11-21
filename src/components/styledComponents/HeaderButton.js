@@ -3,8 +3,8 @@ import pallete from "../../pallete"
 
 const HeaderButton = styled.button`
   box-sizing: border-box;
-  height: 48px;
-  width: 200px;
+  height: 40px;
+  width: 160px;
   border: 1px solid ${pallete.color.secondary.main};
   border-radius: 8px;
   background-color: ${pallete.color.secondary.main};
@@ -21,7 +21,7 @@ const HeaderButton = styled.button`
   }
   span {
     font-family: "Gotham Condensed";
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 19px;
     text-transform: uppercase;

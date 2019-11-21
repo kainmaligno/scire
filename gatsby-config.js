@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Scire empresa mexicana de servicios de salud`,
-    url:`"https://peaceful-sinoussi-e5a1a5.netlify.com"`,
+    title: `Scire`,
+    url: `"https://peaceful-sinoussi-e5a1a5.netlify.com"`,
     description: `Una empresa creada
     por seres humanos
     para el cuidado y la salud de
@@ -29,12 +29,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name:`siteInfo`,
-        typeName:`Json`,
+        name: `siteInfo`,
+        typeName: `Json`,
         path: `${__dirname}/src/siteInfo/`,
       },
     },
-   
+
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

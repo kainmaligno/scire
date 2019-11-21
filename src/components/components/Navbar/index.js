@@ -11,15 +11,15 @@ const NavWrapper = styled.div`
   box-shadow: 0 2px 4px 0 rgba(109, 109, 109, 0.3);
   display: flex;
   justify-content: space-between;
-  padding: 1.2% 4%;
+  padding: 15px 4%;
   flex-direction: column;
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   background-color: #ffffff;
 `
 const NavContainer = styled.div`
   width: 92vw;
-  height: 150px;
+  height: 100px;
 `
 const NavSocialContainer = styled.div`
   margin-bottom: 1%;
@@ -29,8 +29,8 @@ const NavSocialContainer = styled.div`
   justify-content: flex-end;
   font-family: "Gotham Condensed";
   img {
-    width: 30px;
-    margin-right: 20px;
+    width: 25px;
+    margin-right: 10px;
   }
 `
 const NavSocialWrapper = styled.div`
@@ -40,12 +40,16 @@ const NavSocialWrapper = styled.div`
 const NavContactWrapper = styled.div`
   display: flex;
   justify-content: center;
-  width: 200px;
+  width: 160px;
   span {
-    margin-top: 20px;
+    margin-top: 12px;
     height: 16px;
     color: #72295e;
-    font-size: 22px;
+    font-size: 16px;
+  }
+  @media (max-width: 900px) {
+    width: 120px;
+    justify-content: flex-end;
   }
 `
 const NavListWrapper = styled.div`
@@ -55,33 +59,25 @@ const NavListWrapper = styled.div`
   height: 0px;
 `
 const LogoContainer = styled.div`
-  margin-top: 15%;
+  margin-top: 30px;
   img {
-    width: 200px;
-  }
-  @media (max-width: 900px) {
-    margin-top: 25%;
-    img {
-      width: 180px;
-    }
+    width: 160px;
   }
 `
 const MenuContainer = styled.div`
   display: none;
-  margin: 30px;
-  padding-top: 40px;
+  margin-top: 30px;
   text-align: right;
   @media (max-width: 900px) {
     display: block;
   }
 `
 const MenuContent = styled.div`
-  margin-top: 15px;
   ul {
     li {
       color: #b0b0b0;
       font-family: "Gotham Condensed";
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 300;
       line-height: 19px;
       list-style: none;
@@ -109,7 +105,7 @@ const UnorderList = styled.ul`
     height: 19px;
     color: #b0b0b0;
     font-family: "Gotham Condensed";
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 19px;
     text-align: center;

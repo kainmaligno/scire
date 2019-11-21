@@ -4,6 +4,126 @@ import marker from "../../../images/mapa_pin.svg"
 import phone from "../../../images/icon_tel.svg"
 import mail from "../../../images/email.svg"
 
+const FooterHeader = styled.div`
+  height: auto;
+  padding: 2% 0;
+  width: 100%;
+  background: linear-gradient(177.39deg, #492241 0%, #261b23 100%);
+  color: #ae9caa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+const FooterBottom = styled.div`
+  height: 10%;
+  background-color: #261b23;
+  color: #ae9caa;
+  font-family: "Walkway SemiBold";
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  @media (max-width: 930px) {
+    font-size: 11px;
+  }
+`
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 90%;
+  width: 90%;
+  @media (max-width: 930px) {
+    justify-content: center;
+    margin-top: 5%;
+  }
+`
+const Marker = styled.div`
+  width: 65%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  div {
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      line-height: 22px;
+      color: #ae9caa;
+      font-family: "Walkway SemiBold";
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 839px) {
+    justify-content: center;
+    div {
+      align-items: center;
+      margin-left: 3px;
+      p {
+        text-align: center;
+      }
+    }
+  }
+`
+const ContactContainer = styled.div`
+  margin: 10px 0;
+  padding-right: 5%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  p {
+    width: 85%;
+    text-align: center;
+    color: #9b79c1;
+    font-family: "Gotham Condensed";
+    font-size: 14px;
+  }
+  div {
+    display: flex;
+    height: 95%;
+  }
+  @media (max-width: 960px) {
+    padding-right: 0;
+  }
+`
+const ContactImages = styled.aside`
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 30px;
+    margin: 6px;
+  }
+`
+const Contact = styled.aside`
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 30px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0 40px;
+    line-height: 18px;
+    .space {
+      font-size: 1px;
+    }
+  }
+`
+const Info = styled.div`
+  color: #ae9caa;
+  font-family: "Walkway SemiBold";
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+`
+
 const Footer = () => (
   <div>
     <FooterHeader>
@@ -11,8 +131,8 @@ const Footer = () => (
         <Marker>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.9954978466338!2d-98.2651678!3d19.0205152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc79e11261859%3A0xae0be8a01f34c4eb!2sTorres%20M%C3%A9dicas%20Angel%C3%B3polis!5e0!3m2!1ses-419!2smx!4v1573449728785!5m2!1ses-419!2smx"
-            width="200"
-            height="200"
+            width="160"
+            height="160"
             allowFullScreen={true}
             title="map"
           ></iframe>
@@ -55,114 +175,3 @@ const Footer = () => (
 )
 
 export default Footer
-
-const FooterHeader = styled.div`
-  height: auto;
-  padding: 2% 0;
-  width: 100%;
-  background: linear-gradient(177.39deg, #492241 0%, #261b23 100%);
-  color: #ae9caa;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
-const FooterBottom = styled.div`
-  height: 10%;
-  background-color: #261b23;
-  color: #ae9caa;
-  font-family: "Walkway SemiBold";
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  text-align: center;
-  @media (max-width: 930px) {
-    font-size: 11px;
-  }
-`
-const FooterContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  height: 90%;
-  width: 90%;
-  @media (max-width: 930px) {
-    justify-content: center;
-    margin-top: 5%;
-  }
-`
-const Marker = styled.div`
-  width: 55%;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  div {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    p {
-      line-height: 22px;
-      color: #ae9caa;
-      font-family: "Walkway SemiBold";
-      font-size: 20px;
-    }
-  }
-`
-const ContactContainer = styled.div`
-  margin: 10px 0;
-  padding-right: 10%;
-  padding-top: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  p {
-    width: 85%;
-    text-align: center;
-    color: #9b79c1;
-    font-family: "Gotham Condensed";
-    font-size: 18px;
-  }
-  div {
-    display: flex;
-    height: 95%;
-  }
-  @media (max-width: 930px) {
-    padding-right: 0;
-  }
-`
-const ContactImages = styled.aside`
-  display: flex;
-  flex-direction: column;
-  img {
-    width: 30px;
-    margin: 6px;
-  }
-`
-const Contact = styled.aside`
-  display: flex;
-  flex-direction: column;
-  img {
-    width: 30px;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0 40px;
-    line-height: 18px;
-    .space {
-      font-size: 1px;
-    }
-  }
-`
-const Info = styled.div`
-  color: #ae9caa;
-  font-family: "Walkway SemiBold";
-  font-size: 16px;
-  text-align: center;
-  @media (max-width: 930px) {
-    margin-top: 20px;
-  }
-`

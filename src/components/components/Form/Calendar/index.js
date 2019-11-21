@@ -1,23 +1,19 @@
-import React from 'react';
-import { Space, Calen} from './styles';
-import DatePicker from './Calendar';
+import React from "react"
+import { Calen } from "./styles"
+import { Section } from "../styles"
+import DatePicker from "./Calendar"
 
 const Calendar = () => {
-    return(
-        <Space>
-            <Calen>
-                <DatePicker 
-                    text = { "Fecha" }
-                />
-            </Calen>
-            <Calen>
-                <DatePicker 
-                    text = { "Segunda opción de fecha" }
-                />
-            </Calen>
-            
-        </Space>
-    )
+  return (
+    <Section>
+      <Calen>
+        <DatePicker text={"Fecha"} />
+      </Calen>
+      <Calen>
+        <DatePicker text={"Segunda opción de fecha"} />
+      </Calen>
+    </Section>
+  )
 }
 
-export default Calendar;
+export default Calendar

@@ -1,6 +1,7 @@
 ---
 title: "POTENCIALES EVOCADOS"
 info: "Pruebas que estudian el funcionamiento de la via visual, auditiva y del tacto."
+pointer: "Potenciales Evocados"
 img: "https://res.cloudinary.com/drakarzamael/image/upload/v1573178565/estudiosMini/POTENCIALES_EVOCADOS.svg"
 blogImg: "https://res.cloudinary.com/drakarzamael/image/upload/v1573178919/estudiosBlog/Potenciales_Evocados_open.svg"
 ---

@@ -7,7 +7,7 @@ const HeaderButton = styled.button`
   justify-content:space-around;
   box-sizing: border-box;
   height: 48px;
-  width: 200px;
+  width: auto;
   border: 1px solid ${pallete.color.secondary.main};
   border-radius: 8px;
   background-color: #ffffff;
@@ -18,15 +18,17 @@ const HeaderButton = styled.button`
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  a{
+  span{
     color: #ffffff;
+    margin-right: 15px;
+    margin-left: 15px;
   }
   img.img-none{
     display:none;
     animation: doctoralia 0.5s 1;
   }
   &:hover {
-    a{
+    span{
       color: ${pallete.color.secondary.main};
     }
     img.img-1{
@@ -44,7 +46,7 @@ const HeaderButton = styled.button`
       }
     }
   }
-  a {
+  span {
     font-family: "Gotham Condensed";
     font-size: 18px;
     font-weight: 300;
@@ -52,7 +54,7 @@ const HeaderButton = styled.button`
     text-transform: uppercase;
   }
   &:before {
-    border-radius: 7px;
+    border-radius: 6px;
     content: "";
     position: absolute;
     z-index: -1;

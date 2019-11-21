@@ -23,7 +23,7 @@ const SideBar = styled.div`
   height: 50vh;
   width: 25vw;
   img {
-    width:140px;
+    width: 140px;
   }
   @media (max-width: 680px) {
     margin-top: 20px;
@@ -34,7 +34,7 @@ const SideBar = styled.div`
     justify-content: space-around;
     align-items: center;
     img {
-        width: 100px;
+      width: 100px;
     }
   }
 `
@@ -62,7 +62,7 @@ const Header = styled.div`
   justify-content: space-between;
   margin-bottom: 30px;
   @media (max-width: 680px) {
-    flex-direction:column;
+    flex-direction: column;
   }
 `
 const Avatar = styled.img`
@@ -71,6 +71,7 @@ const Avatar = styled.img`
   border-radius: 500px;
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
+  z-index: 3;
 `
 const Profile = styled.div`
   display: flex;
@@ -80,13 +81,13 @@ const Profile = styled.div`
   width: 85vw;
 `
 const Content = styled.div`
-  width:100%;
+  width: 100%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: space-between;
   @media (max-width: 680px) {
-  flex-direction:column;
-}
+    flex-direction: column;
+  }
 `
 const Parragraph = styled.div`
   flex-direction: column;
@@ -102,7 +103,7 @@ const Parragraph = styled.div`
   @media (max-width: 680px) {
     width: 85vw;
     p {
-        font-size: 15px;
+      font-size: 15px;
     }
   }
 `
@@ -127,27 +128,27 @@ const Doctor = ({
             <span>{cedula}</span>
           </Title>
           {doc_link ? (
-            <Button>
-              <a
-                style={{ textDecorationLine: "none" }}
-                href={doc_link}
-                target="__blank"
-              >
-                ver perfil en doctoralia
-              </a>
-              <img
-                src={doctoralia}
-                alt="doctoralia"
-                style={{ height: "25px" }}
-                className="img-1"
-              />
-              <img
-                src={doctoraliaTurquesa}
-                alt="doctoralia"
-                style={{ height: "25px" }}
-                className="img-none"
-              />
-            </Button>
+            <a
+              style={{ textDecorationLine: "none" }}
+              href={doc_link}
+              target="__blank"
+            >
+              <Button>
+                <span>ver perfil en doctoralia</span>
+                <img
+                  src={doctoralia}
+                  alt="doctoralia"
+                  style={{ height: "25px" }}
+                  className="img-1"
+                />
+                <img
+                  src={doctoraliaTurquesa}
+                  alt="doctoralia"
+                  style={{ height: "25px" }}
+                  className="img-none"
+                />
+              </Button>
+            </a>
           ) : (
             ""
           )}

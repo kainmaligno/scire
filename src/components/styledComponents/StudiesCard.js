@@ -15,21 +15,20 @@ const CardStudio = styled.div`
   background-color: #ffffff;
   box-shadow: 0 4px 6px 0 rgba(176, 176, 176, 0.3);
   img {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 `
 const CardInfo = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 85%;
   span {
     color: #6d6d6d;
     font-family: "Gotham Condensed";
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 25px;
   }
 `
 

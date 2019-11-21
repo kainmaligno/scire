@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import Title from "../components/Title"
-import {Link} from 'gatsby'
+import { Link } from "gatsby"
+import Button from "../styledComponents/Button"
 
 const FormContainer = styled.div`
   width: 100%;
@@ -37,10 +37,10 @@ const SimpleContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   width: 42%;
-  @media(max-width:1600px){
-    width:48%;
+  @media (max-width: 1600px) {
+    width: 48%;
   }
- 
+
   @media (max-width: 1024px) {
     width: 74%;
   }
@@ -79,41 +79,58 @@ const TextArea = styled.textarea`
     width: 100%;
   }
 `
- const InputSpace = styled.div`
-    display        : flex;
-    flex-direction : column;
-    justify-content: space-evenly;
-    margin         : 10px 0px;
-    width          : 45%;
-    @media ( max-width: 1600px ){
-        width: 45%;
-    }
-    @media ( max-width: 700px ){
-        width: 100%;
-    }
-    @media ( max-width: 700px ){
-        width: 100%;
-    }
-    @media ( max-width: 700px ){
-        width: 100%;
-    }
+const InputSpace = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+  width: 45%;
+  @media (max-width: 1600px) {
+    width: 45%;
+  }
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `
 const InputElem = styled.input`
-    border       : 1px solid #B0B0B0;
-    border-radius: 4px;
-    padding      : 10px 10px;
-    outline      : none;
-    width        : 100%;
+  border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  padding: 10px 10px;
+  outline: none;
+  width: 100%;
 `
 const Span = styled.span`
-    color    : #313131;
-    font-size: 18px;
+  color: #313131;
+  font-size: 18px;
 `
+const Title = styled.span`
+  margin-top: 50px;
+  color: #00999e;
+  font-size: 28px;
+  text-align: center;
+  width: 50%;
+  @media (max-width: 1100px) {
+    width: 80%;
+  }
+  @media (max-width: 680px) {
+    font-size: 20px;
+  }
+`
+
 const FaqForm = () => {
   return (
     <FormContainer>
       <FormWrapper>
-        <Title text="Manda tus dudas, las responderemos vía correo electrónico. Deja tu contacto." />
+        <Title>
+          Manda tus dudas, las responderemos vía correo electrónico. Deja tu
+          contacto.
+        </Title>
         <FormInputContainer
           action="https://formspree.io/xqkklngk"
           method="POST"
@@ -126,26 +143,22 @@ const FaqForm = () => {
           />
           <SimpleContainer>
             <InputSpace>
-            <Span>Nombre</Span>
-            <InputElem type="text" name="nombre" id=""/>
+              <Span>Nombre</Span>
+              <InputElem type="text" name="nombre" id="" />
             </InputSpace>
             <InputSpace>
-            <Span>Email</Span>
-            <InputElem type="email" name="email" id=""/>
+              <Span>Email</Span>
+              <InputElem type="email" name="email" id="" />
             </InputSpace>
           </SimpleContainer>
           <TextContainer>
             <span>Escribe tu duda o mensaje</span>
             <TextArea name="mensaje" cols="30" row="10" width={"90%"} />
           </TextContainer>
-          <Link to='/gracias/'></Link>
-          <button
-            className="btn-send-contact"
-            type=""
-            uk-toggle="target: #modal-close-default"
-          >
-            ENVIAR
-          </button>
+          <Link to="/gracias/"></Link>
+          <Button type="" uk-toggle="target: #modal-close-default">
+            <p>ENVIAR</p>
+          </Button>
           <div id="modal-close-default" uk-modal="true">
             <div className="uk-modal-dialog uk-modal-body">
               <h2 className="uk-modal-title modal-title">

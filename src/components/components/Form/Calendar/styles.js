@@ -1,28 +1,23 @@
-import styled from 'styled-components';
-
-export const Space = styled.div`
-    display        : flex;
-    justify-content: space-between;
-    flex-direction : row;
-    @media ( max-width: 700px ){
-        flex-direction: column;
-    }
-`
+import styled from "styled-components"
 
 export const Calen = styled.div`
-    display       : flex;
-    flex-direction: column;
-    margin        : 5px 0px;
-    width         : 45%;
-    @media ( max-width: 700px ){
-        width: 100%;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0px;
+  width: 46%;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `
 
 export const Span = styled.span`
-    margin: 5px 0px;
+  margin: 5px 0px;
 `
 export const Input = styled.input`
-    padding: 10px;
-    
+  border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  padding: 10px 10px;
+  outline: none;
+  width: 100%;
 `

@@ -28,8 +28,7 @@ const ArticleTitle = styled.div`
 const GridContainer = styled.div`
   width: 96%;
   height: auto;
-  padding: 1em;
-  margin-top: -6em;
+  margin-top: -10em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +36,9 @@ const GridContainer = styled.div`
   @media (max-width: 900px) {
     width: 100%;
     padding: 0;
+  }
+  @media (max-width: 500px) {
+    margin-top: -7em;
   }
 `
 const CardContainer = styled.div`
@@ -87,6 +89,7 @@ const ServiciosEstudios = () => {
             frontmatter {
               title
               img
+              pointer
             }
           }
         }
@@ -113,13 +116,13 @@ const ServiciosEstudios = () => {
       </ArticleContainer>
       <GridContainer>
         <CardContainer>
-          {/* <StudiesCard/> */}
           {data.allMarkdownRemark.edges.length ? (
             data.allMarkdownRemark.edges.map((item, i) => (
               <StudiesCard
                 title={item.node.frontmatter.title}
                 image={item.node.frontmatter.img}
                 slug={item.node.fields.slug}
+                pointer={item.node.frontmatter.pointer}
                 key={i}
               />
             ))

@@ -25,7 +25,7 @@ const FaqWrapper = styled.div`
   @media (max-width: 769px) {
     padding: 2em 5em 2em 2em;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 580px) {
     flex-direction: column;
     padding: 2em 2em 2em 2em;
   }
@@ -39,12 +39,12 @@ const FaqContainer = styled.div`
   a {
     color: #6d6d6d;
     font-family: "Walkway SemiBold";
-    font-size: 20px;
+    font-size: 16px;
     line-height: 17px;
     background-color: transparent;
     height: 38px;
-    @media (max-width: 500px) {
-      height: 100px;
+    @media (max-width: 580px) {
+      height: 60px;
     }
   }
   a::before {
@@ -78,7 +78,7 @@ const AccordionContainer = styled.div`
   align-items: center;
   background-color: rgba(176, 176, 176, 0.1);
   padding: 10px;
-  @media (max-width: 500px) {
+  @media (max-width: 580px) {
     margin-top: 20px;
     height: 288px;
   }
@@ -122,7 +122,7 @@ const Preguntas = () => {
                 </p>
               </AccordionContainer>
             </li>
-            <li className="uk-open">
+            <li>
               <a className="uk-accordion-title" href="#">
                 ¿Cuánto tiempo dura el estudio de electroencefalograma?
               </a>

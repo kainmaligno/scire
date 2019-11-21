@@ -7,13 +7,18 @@ import ServicesCard from "../components/components/Services/Card"
 
 const ServicesContainer = styled.div`
   display: flex;
-  justify-content: space-around;
-  padding: 4% 2% 2% 2%;
-  width: 95vw;
-  @media (max-width: 850px) {
+  justify-content: center;
+  margin-top: 65px;
+  height: 450px;
+  @media (max-width: 800px) {
+    margin: 12% 0 2% 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
+  }
+  @media (max-width: 450px) {
+    margin: 15% 0 2% 0;
   }
 `
 
@@ -30,7 +35,7 @@ const Services = () => {
       }
       estudios_img: file(relativePath: { eq: "img_servicios_estudios.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 300) {
             originalName
             ...GatsbyImageSharpFluid
           }
